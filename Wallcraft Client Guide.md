@@ -53,6 +53,7 @@ If your issue isn't covered here, be sure to bring it up in #general chat, or ch
 
 ### 2-A. BLACK SCREEN BUG
 > It launchs into a black screen, or the game's screen goes black when changing the video settings to Windowed/Fullscreen.
+
 To fix this, you can change your settings file manually. Navigating from the Wallcraft folder its at `WTF/Config.wtf`
 Change the relevant settings in the `Config.wtf` file to:
 ```

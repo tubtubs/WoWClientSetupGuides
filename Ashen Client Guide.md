@@ -56,8 +56,10 @@ If your issue isn't covered here, be sure to bring it up in #🤝-help-general. 
 > It launchs into a black screen, or the game's screen goes black when changing the video settings to Windowed/Fullscreen.
 To fix this, you can change your settings file manually. Navigating from the WoW folder its at `WTF/Config.wtf`
 Change the relevant settings in the `Config.wtf` file to:
-```SET gxMaximize "1"
-SET gxWindow "1"```
+```
+SET gxMaximize "1"
+SET gxWindow "1"
+```
 Or simply download and extract this [zip](https://www.mediafire.com/file/ai0x81igceo06co/Blackscreen_Fix.zip/file) to your wow directory, overwriting.
 
 ### 2-B. Settings not saving
@@ -117,10 +119,12 @@ Download the `VanillaHelpers.dll` and place it in the WoW folder. This will need
 ### 3-F. [VanillaFixes](https://github.com/hannesmann/vanillafixes/releases)
 This is the launcher that will load the dlls on run time. Extract the zip into your WoW folder.
 In the wow folder you should now have a `dlls.txt`, open it and add the following lines to the bottom, for UnitSP_XP3 and VanillaHelpers support. The rest of the DLLs should be listed in there already.
-```# should be more DLLs listed above
+```
+# should be more DLLs listed above
 # Add your own DLLs below
 UnitXP_SP3.dll
-VanillaHelpers.dll```
+VanillaHelpers.dll
+```
 *NOTE: Technically the shortcut isn't necessary for Ashen WoW, but maybe for other servers*
 *On Ashen you can rename your `wow.exe` to `wow.exe.old` then rename `wow_tweaked.exe` to `wow.exe`, then going forward use the launcher/loader `vanillafixes.exe` to start wow*
 Next, make a shortcut to VanillaFixes.exe. 

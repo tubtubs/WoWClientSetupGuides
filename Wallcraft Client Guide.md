@@ -55,8 +55,10 @@ If your issue isn't covered here, be sure to bring it up in #general chat, or ch
 > It launchs into a black screen, or the game's screen goes black when changing the video settings to Windowed/Fullscreen.
 To fix this, you can change your settings file manually. Navigating from the Wallcraft folder its at `WTF/Config.wtf`
 Change the relevant settings in the `Config.wtf` file to:
-```SET gxMaximize "1"
-SET gxWindow "1"```
+```
+SET gxMaximize "1"
+SET gxWindow "1"
+```
 Or simply download and extract this [zip](https://www.mediafire.com/file/ai0x81igceo06co/Blackscreen_Fix.zip/file) to your wow directory, overwriting.
 
 ### 2-B. Standard Vanilla Spells/Items Cached
@@ -116,10 +118,12 @@ Download the `VanillaHelpers.dll` and place it in the Wallcraft folder. This wil
 ### 3-F. [VanillaFixes](https://github.com/hannesmann/vanillafixes/releases)
 This is the launcher that will load the dlls on rum time. Extract the zip into your WoW folder.
 In the wow folder you should now have a `dlls.txt`, open it and add the following lines to the bottom, for UnitSP_XP3 and VanillaHelpers support. The rest of the DLLs should be listed in there already.
-```# should be more DLLs listed above
+```
+# should be more DLLs listed above
 # Add your own DLLs below
 UnitXP_SP3.dll
-VanillaHelpers.dll```
+VanillaHelpers.dll
+```
 Next, make a shortcut to VanillaFixes.exe. 
 First, right click on VanillaFixes.exe and click `Create Shortcut`. Right click on the new shortcut, and click properties. Add `WoW_Tweaked.exe` after the quotes to the `Target` field. Click Apply, and Okay. Example: [(screenshot)](https://imgur.com/a/vanillafixes-shortcut-auWrnQq)
 You can use this [icon](https://www.wallcraft.org/favicon.ico) for a Wallcraft icon. Click `Change Icon` in the properties window, then click browse  and navigate to the icon. Click Apply, then Okay. Feel free to click and drag the shortcut to your task bar, desktop, or whatever.

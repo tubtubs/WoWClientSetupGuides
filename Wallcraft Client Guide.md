@@ -64,18 +64,21 @@ Or simply download and extract this [zip](https://www.mediafire.com/file/ai0x81i
 
 ### 2-B. Standard Vanilla Spells/Items Cached
 > You start up the game and don't have new racial abilities, or common green items are bind on equip instead of not bound at all 
+
 If this happens the `WDB` folder, in the Wallcraft folder needs to be deleted.
 Be sure to do this while there are no wow windows open, as it is overwritten every time the client closes. This should be done again if you're running into any issues in the future. The WDB folder contains cached information, and should be deleted regularly to allow updates to take full effect.
 To disable the cache, create a file called `wdb.txt`, then rename it to `wdb` removing the `.txt`. The downside is more downloading, and possibly longer loading times but on the other hand you'd never have to clear your cache.
 
 ### 2-C. Settings not saving
 > Settings for things like video, interface, or addons don't persist between relaunches/game sessions. 
+
 Torrent clients tend to make folders read-only when seeding, so you may need to stop your torrent client or remove the torrent. Afterwards, right click on the Wallcraft folder click on Properties and un-check the read only flag. Click Apply, and Okay.
 When changing settings in game, be sure to log out or properly `/exit` to make sure your settings are saved. If you alt-f4, disconnect, or crash your settings may not be saved.
 
 ### 2-D. Reset Settings Popup/Doesn't Launch
 > Hardware changed. Reload default settings? Popup
 > Doesn't launch
+
 You can always click no to this popup, but sometimes it draws in the background and it may just appear that wow isnt launching at all. You can see the popup in task manager (wow.exe, but very low memory usage less than 30mb) to confirm this is happening.
 This popup is caused by launching a different expansion of wow (Wrath, cataclysm, whatever).
 Sometimes you can get the popup to draw properly if you launch the game from the game folder (rather than a shortcut on desktop, or taskbar).
@@ -84,6 +87,7 @@ If this doesn't work, you can safely [delete the registry keys](https://www.revo
 ### 2-E. Doesn't Launch/Quickly Flashes on Screen  - [Data Execution Prevention](https://github.com/balakethelock/SuperWoW?tab=readme-ov-file#troubleshooting)
 > quickly flashes on screen
 > doesn't launch at all
+
 This relates more to client mods, which will be covered in the next section. Client mods often inject code, which can be flagged by windows services as malicious, so Windows likes to stop them from running. This Data Execution Prevention setting needs to be disabled for your wow, but should still be enabled globally for security.
 The easiest way to access this setting is to search `Advanced System Settings` in the search bar, click on `Settings` in the `performance` section, and then navigate to the `Data Execution Tab` at the top. The most secure setting would be to turn on for all programs, and make an exception for your wow.exe.
 [Screenshots](https://imgur.com/a/dep-data-execution-prevention-exception-L70Xeom)

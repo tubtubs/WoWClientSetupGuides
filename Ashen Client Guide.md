@@ -6,14 +6,14 @@ With that in mind, if you think I've missed something cool, please share.
 If you have any questions, concerns, or other feedback please let me know.
 
 ## SECTIONS/CHECKLIST:
-### 1. [Initial Setup](https://discord.com/channels/1412156063788040214/1466544300933255199/1466686057503527025)
+### 1. [Initial Setup](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#1-initial-setup-1)
 * Downloading, extracting the game
 * Changing realmlist
 * Deleting/Disabling WDB/cache
-### 2. [First Wave Troubleshooting](https://discord.com/channels/1412156063788040214/1466544300933255199/1466686133172834457)
+### 2. [First Wave Troubleshooting](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#2-first-wave-troubleshooting-1)
 * Known issues
 * Data Execution Prevention exception for client mods
-### 3. [ClientMods](https://discord.com/channels/1412156063788040214/1466544300933255199/1466686243097018593)
+### 3. [ClientMods](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#2-first-wave-troubleshooting-1)
 * Nampower
 * SuperWoW
 * VanillaTweaks
@@ -22,16 +22,16 @@ If you have any questions, concerns, or other feedback please let me know.
 * VanillaFixes
 * DVXK
 * Vanilla MultiMonitor Fix
-### [4. Addons](https://discord.com/channels/1412156063788040214/1466544300933255199/1466686352602173543)
+### [4. Addons](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#2-first-wave-troubleshooting-1)
 * Manual/Auto Installation
 * Recommended Addons, and Lists
-### [5. Bonus Patches](https://discord.com/channels/1412156063788040214/1466544300933255199/1466686391609065586)
+### [5. Bonus Patches](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#5-bonus-patches-1)
 * TBC Retexture
 * Music Patch
 * Blood Patch
 * Water Patch
 * Darker Nights
-### 6. [FAQ](https://discord.com/channels/1412156063788040214/1466544300933255199/1466686458038456432)
+### 6. [FAQ](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#6-faq-1)
 
 ## 1. INITIAL SETUP
 
@@ -49,7 +49,7 @@ Before playing on Ashen WoW the `WDB` folder found in the WoW folder should be d
 To disable the cache, create a file called `wdb.txt`, then rename it to `wdb` removing the `.txt`. The downside is more downloading, and possibly longer loading times but on the other hand you'd never have to clear your cache.
 
 ## 2. FIRST WAVE TROUBLESHOOTING
-Perform a first run of wow.exe, login, check your settings and see if you're running into any issues. Even if you're not running into any issues, you will need to do the steps in  [2-E. Data Execution Prevention](https://discord.com/channels/1412156063788040214/1466544300933255199/1466686207751618620) for client mods to work properly. Poor performance (lag, stuttering) maybe addressed by the client mods up next.
+Perform a first run of wow.exe, login, check your settings and see if you're running into any issues. Even if you're not running into any issues, you will need to do the steps in  [2-E. Data Execution Prevention](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#2-e-doesnt-launchquickly-flashes-on-screen----data-execution-prevention) for client mods to work properly. Poor performance (lag, stuttering) maybe addressed by the client mods up next.
 If your issue isn't covered here, be sure to bring it up in #🤝-help-general. Someone else might have a solution.
 
 ### 2-A. BLACK SCREEN BUG
@@ -98,7 +98,7 @@ NOTE: The exception setting needs to be re-applied if you ever move your wow ins
 If it was working properly before it'll often work properly on 2nd try, or after a reboot. If the issue persists, check the antivirus to see if any of the client mod DLLs (nampower, vfpatcher, superwow, UnitXP_SP3) got flagged as malicious or quarantined.
 
 ## 3. CLIENT MODS
-Make sure you check the [2-E. Data Execution Prevention](https://discord.com/channels/1412156063788040214/1466544300933255199/1466686207751618620) section above to verify you have a Data Execution Prevention exception in place for these client mods.
+Make sure you check the [2-E. Data Execution Prevention](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#2-e-doesnt-launchquickly-flashes-on-screen----data-execution-prevention) section above to verify you have a Data Execution Prevention exception in place for these client mods.
 
 ### 3-A. [NamPower](https://gitea.com/avitasia/nampower/releases)
 This mod eases woes for casters with latency. It also adds support for spell batching. Just extract the DLL into the same folder as your wow.exe
@@ -107,7 +107,7 @@ This mod eases woes for casters with latency. It also adds support for spell bat
 This mod does a lot. It adds sparkles on herbs/mines/chests. With the [addon](https://github.com/balakethelock/SuperAPI), it has a built in settings menu in the minimap button to change autoloot, FOV, noise in background, click through corpses and more. It also provides extra functionality to [supported addons](https://turtle-wow.fandom.com/wiki/Addons#SuperWoW_Addons).
 Download, extract, and drop the DLL into the WoW folder. SuperWoW's launcher isn't needed, and won't be used.
 The MPQ patch is optional, but should be renamed `patch-S.MPQ` and moved to the `Data` folder in your wow directory if you're using it.
-The [SuperAPI](https://github.com/balakethelock/SuperAPI) addon can be installed manually (extract to `Interface/Addons` and rename the folder to `SuperAPI`), or automatically using the git addon manager. More information in [4. ADDONS](https://discord.com/channels/1412156063788040214/1466544300933255199/1466686352602173543) section below.
+The [SuperAPI](https://github.com/balakethelock/SuperAPI) addon can be installed manually (extract to `Interface/Addons` and rename the folder to `SuperAPI`), or automatically using the git addon manager. More information in [4. ADDONS](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#4-addons-1) section below.
 
 ### 3-C. [VanillaTweaks](https://github.com/tubtubs/vanilla-tweaks/releases/)
 VanillaTweaks has some features in common with SuperWow, but my fork doesn't touch these by default. This makes changes directly to the wow.exe, adding support for Farclip, frill distance, camera max distance, name player range, large address aware, camera skip glitch and some other stuff.
@@ -220,5 +220,5 @@ You just need to move this .mpq file to the `Data` folder.
 ### Other Patches
 I'm not aware of, or interested in supporting any HD model packs. I've heard rumor of a nude patch, I may one day acquire this for myself... Purely for *very interesting* scientific purposes of course.
 
-# 6. FAQ
+## 6. FAQ
 No one has asked me anything yet. Want to be the first?

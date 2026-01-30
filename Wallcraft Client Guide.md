@@ -4,15 +4,15 @@ This client setup guide goes through *ALL* the bells and whistles. If you think 
 If you have any questions, concerns, or other feedback please let me know.
 
 ## SECTIONS/CHECKLIST:
-### 1. [Initial Setup](https://discord.com/channels/1055619790292668426/1456704251060420640/1456704373450346518)
+### 1. [Initial Setup](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Wallcraft%20Client%20Guide.md#1-initial-setup-1)
 * Downloading, extracting the game 
 * Changing realmlist 
 * Deleting/Disabling WDB/cache 
 * Extracting Wallcraft patches
-### 2. [First Wave Troubleshooting](https://discord.com/channels/1055619790292668426/1456704251060420640/1456704561543647435)
+### 2. [First Wave Troubleshooting](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Wallcraft%20Client%20Guide.md#2-first-wave-troubleshooting-1)
 * Known issues
 * Data Execution Prevention exception for client mods
-### 3. [ClientMods](https://discord.com/channels/1055619790292668426/1456704251060420640/1456705268439060581)
+### 3. [ClientMods](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Wallcraft%20Client%20Guide.md#3-client-mods)
 * Nampower
 * SuperWoW
 * VanillaTweaks
@@ -21,14 +21,14 @@ If you have any questions, concerns, or other feedback please let me know.
 * VanillaFixes
 * DVXK
 * Vanilla MultiMonitor Fix
-### [4. Addons](https://discord.com/channels/1055619790292668426/1456704251060420640/1456705856916688946)
+### [4. Addons](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Wallcraft%20Client%20Guide.md#4-addons-1)
 * Manual/Auto Installation
 * Recommended Addons, and Lists
-### [5. Bonus Patches](https://discord.com/channels/1055619790292668426/1456704251060420640/1456705986256568353)
+### [5. Bonus Patches](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Wallcraft%20Client%20Guide.md#5-bonus-patches-1)
 * TBC Retexture
 * Music Patch
 * Blood Patch
-### 6. [FAQ](https://discord.com/channels/1055619790292668426/1456704251060420640/1456706225474633896)
+### 6. [FAQ](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Wallcraft%20Client%20Guide.md#6-faq-1)
 
 ## 1. INITIAL SETUP
 ### 1-A. DOWNLOAD/EXTRACT CLIENT
@@ -214,5 +214,5 @@ You just need to move this .mpq file to the `Data` folder.
 ### Other Patches
 Darker nights isn't currently supported, it will cause crashes in new zones added in Wallcraft (like Dalaran). I've heard rumor that Wall is planning on building Darker nights directly into Wallcraft on Launch. I'm not aware of, or interested in supporting any HD model packs. I've heard rumor of a nude patch, I may one day acquire this for myself... Purely for *very interesting* scientific purposes of course.
 
-# 6. FAQ
+## 6. FAQ
 No one has asked me anything yet. Want to be the first?

@@ -215,4 +215,4 @@ You just need to move this .mpq file to the `Data` folder.
 Darker nights isn't currently supported, it will cause crashes in new zones added in Wallcraft (like Dalaran). I've heard rumor that Wall is planning on building Darker nights directly into Wallcraft on Launch. I'm not aware of, or interested in supporting any HD model packs. I've heard rumor of a nude patch, I may one day acquire this for myself... Purely for *very interesting* scientific purposes of course.
 
 ## 6. FAQ
-No one has asked me anything yet. Want to be the first?
+* I don't have a threat meter to recommend. Consult your raid leader, or fellow raiders for a tested, trusted meter.

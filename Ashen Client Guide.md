@@ -186,7 +186,7 @@ If you're running into issues with addons, feel free to reach out in the #💾-a
 [ShaguDPS](https://github.com/shagu/ShaguDPS)
 [SP SwingTimer (SuperWoW support)](https://github.com/MarcelineVQ/SP_SwingTimer)
 [SoloRaidTargetIcons (Requires SuperWoW)](https://github.com/refaim/SoloRaidTargetIcons)
-[Parchment](https://github.com/tubtubs/Parchment) Note taking
+[Parchment](https://github.com/tubtubs/Parchment) - Note taking
 [TankPlates](https://github.com/MarcelineVQ/TankPlates)
 [WIM](https://github.com/me0wg4ming/WIM)
 
@@ -221,4 +221,4 @@ You just need to move this .mpq file to the `Data` folder.
 I'm not aware of, or interested in supporting any HD model packs. I've heard rumor of a nude patch, I may one day acquire this for myself... Purely for *very interesting* scientific purposes of course.
 
 ## 6. FAQ
-No one has asked me anything yet. Want to be the first?
+* I don't have a threat meter to recommend. Consult your raid leader, or fellow raiders for a tested, trusted meter.

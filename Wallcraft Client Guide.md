@@ -21,10 +21,10 @@ If you have any questions, concerns, or other feedback please let me know.
 * VanillaFixes
 * DVXK
 * Vanilla MultiMonitor Fix
-### [4. Addons](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Wallcraft%20Client%20Guide.md#4-addons-1)
+### 4. [Addons](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Wallcraft%20Client%20Guide.md#4-addons-1)
 * Manual/Auto Installation
 * Recommended Addons, and Lists
-### [5. Bonus Patches](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Wallcraft%20Client%20Guide.md#5-bonus-patches-1)
+### 5. [Bonus Patches](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Wallcraft%20Client%20Guide.md#5-bonus-patches-1)
 * TBC Retexture
 * Music Patch
 * Blood Patch

@@ -13,16 +13,18 @@ If you have any questions, concerns, or other feedback please let me know.
 ### 2. [First Wave Troubleshooting](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#2-first-wave-troubleshooting-1)
 * Known issues
 * Data Execution Prevention exception for client mods
-### 3. [ClientMods](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#2-first-wave-troubleshooting-1)
+### 3. [ClientMods](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#3-client-mods)
 * Nampower
 * SuperWoW
 * VanillaTweaks
 * UnitXP_SP3
 * VanillaHelpers
+* PerfBoost
+* Interact
 * VanillaFixes
 * DVXK
 * Vanilla MultiMonitor Fix
-### 4. [Addons](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#2-first-wave-troubleshooting-1)
+### 4. [Addons](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#4-addons-1)
 * Manual/Auto Installation
 * Recommended Addons, and Lists
 ### 5. [Bonus Patches](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#5-bonus-patches-1)
@@ -31,6 +33,7 @@ If you have any questions, concerns, or other feedback please let me know.
 * Blood Patch
 * Water Patch
 * Darker Nights
+* Sound Patches
 ### 6. [FAQ](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#6-faq-1)
 
 ## 1. INITIAL SETUP
@@ -101,7 +104,8 @@ If it was working properly before it'll often work properly on 2nd try, or after
 Make sure you check the [2-E. Data Execution Prevention](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#2-e-doesnt-launchquickly-flashes-on-screen----data-execution-prevention) section above to verify you have a Data Execution Prevention exception in place for these client mods.
 
 ### 3-A. [NamPower](https://gitea.com/avitasia/nampower/releases)
-This mod eases woes for casters with latency. It also adds support for spell batching. Just extract the DLL into the same folder as your wow.exe
+This mod is highly configurable, easing woes for casters with latency adding support for spell batching. Just extract the DLL into the same folder as your wow.exe
+Also has an [addon](https://gitea.com/avitasia/NampowerSettings) to configure this mod in game with a menu opened from the minimap button. The addon allows visual indication of spell batching, with a movable icon (disabled by default). This can be installed manually (extract to `Interface/Addons` and rename the folder to `NampowerSettings`), or automatically using the git addon manager. More information in[4. ADDONS](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#4-addons-1) section below.
 
 ### 3-B. [SuperWoW](https://github.com/balakethelock/SuperWoW/releases)
 This mod does a lot. It adds sparkles on herbs/mines/chests. With the [addon](https://github.com/balakethelock/SuperAPI), it has a built in settings menu in the minimap button to change autoloot, FOV, noise in background, click through corpses and more. It also provides extra functionality to [supported addons](https://turtle-wow.fandom.com/wiki/Addons#SuperWoW_Addons).
@@ -114,21 +118,31 @@ VanillaTweaks has some features in common with SuperWow, but my fork doesn't tou
 Simply extract the folder into your wow directory, and click and drag the WoW.exe ontop of VanillaTweaks.exe. This will create a new file `WoW_tweaked.exe` in the WoW folder.
 
 ### 3-D. [UnitXP_SP3](https://codeberg.org/konaka/UnitXP_SP3/releases)
-This client mod is very fresh, I don't have as much experience with it. It offers some improvements to name plate clipping, combat text rendering, and offers a means to disable weather effects as well as some other features. IT adds some neat lua calls that can line of sight check, distance check, behind check, and some tab targetting replacements that loop properly. Read more about all the functionality [here](https://codeberg.org/konaka/UnitXP_SP3/wiki)
+This client mod is very fresh, I don't have as much experience with it. It offers some improvements to name plate clipping, combat text rendering, and offers a means to disable weather effects as well as some other features. It adds some new keybinds, and lua calls that can line of sight check, distance check, behind check, and some tab targetting replacements that loop properly. Read more about all the functionality [here](https://codeberg.org/konaka/UnitXP_SP3/wiki)
 Extract the DLL into the Wallcraft folder. You will also need to install the accompanying addon so that it can be configured in game from the minimap button. Extract the `UnitXP_SP3_Addon` folder to the `Interface/Addons` folder.
 
 ### 3-E. [VanillaHelpers](https://github.com/isfir/VanillaHelpers/releases)
-Also very fresh. Makes some improvements to loading assets, allocating memory and adds lua functions for morphing/swapping display IDs and more. Check the [usage](https://github.com/isfir/VanillaHelpers?tab=readme-ov-file#usage) details for the lua here. I don't know of any addons that take advantage of this yet.
+Also very fresh. Makes some improvements to loading assets (useful for HD patches), screenshots saved as jpegs, allocating memory and adds lua functions for morphing/swapping display IDs and more. Check the [usage](https://github.com/isfir/VanillaHelpers?tab=readme-ov-file#usage) details for the lua here. Some addons take advantage of this mod's extended lua calls. For example, [MorphHelper](https://github.com/tubtubs/MorphHelper) adds a window and some slash commands for morphing.
 Download the `VanillaHelpers.dll` and place it in the WoW folder. This will need to be loaded by VanillaFixes, which is covered next.
 
-### 3-F. [VanillaFixes](https://github.com/hannesmann/vanillafixes/releases)
+### 3-F. [PerfBoost](https://gitea.com/avitasia/perf_boost)
+This mod has many options and keybind toggles for when and what to hide/cull from rendering (players, units, corpses, spell effects). Just extract the DLL into the same folder as your wow.exe.
+Also has an [addon](https://gitea.com/avitasia/PerfBoostSettings) to configure this mod in game with a menu opened from the minimap button. This  can be installed manually (extract to `Interface/Addons` and rename the folder to `PerfBoostSettings`), or automatically using the git addon manager. More information in [4. ADDONS](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#4-addons-1) section below.
+
+### 3-G. [Interact](https://github.com/luskanek/Interact)
+Allows you to bind a key which you can then use to interact with the world around you. Can pick herbs, mine, or loot, talk to NPCs without using the mouse to target. However, will not automatically skin unfortunately.
+Extract the entire zip to the same folder as your `wow.exe`, including the interface folder. You should enable this addon in game, and add the dll to the `dlls.txt`, which is coming up.
+
+### 3-H. [VanillaFixes](https://github.com/hannesmann/vanillafixes/releases)
 This is the launcher that will load the dlls on run time. Extract the zip into your WoW folder.
-In the wow folder you should now have a `dlls.txt`, open it and add the following lines to the bottom, for UnitSP_XP3 and VanillaHelpers support. The rest of the DLLs should be listed in there already.
+In the wow folder you should now have a `dlls.txt`, open it and add the following lines to the bottom, for UnitSP_XP3 and VanillaHelpers, PerfBoost, and Interact support. The rest of the DLLs should be listed in there already.
 ```
 # should be more DLLs listed above
 # Add your own DLLs below
 UnitXP_SP3.dll
 VanillaHelpers.dll
+perf_boost.dll
+Interact.dll
 ```
 *NOTE: Technically the shortcut isn't necessary for Ashen WoW, but maybe for other servers*
 *On Ashen you can rename your `wow.exe` to `wow.exe.old` then rename `wow_tweaked.exe` to `wow.exe`, then going forward use the launcher/loader `vanillafixes.exe` to start wow*
@@ -136,12 +150,12 @@ Next, make a shortcut to VanillaFixes.exe.
 First, right click on VanillaFixes.exe and click `Create Shortcut`. Right click on the new shortcut, and click properties. Add `WoW_Tweaked.exe` after the quotes to the `Target` field. Click Apply, and Okay. Example: [(screenshot)](https://imgur.com/a/vanillafixes-shortcut-auWrnQq)
 If there's a cool Ashen Icon, you can download that. Click `Change Icon` in the properties window, then click browse  and navigate to the icon. Click Apply, then Okay. Feel free to click and drag the shortcut to your task bar, desktop, or whatever.
 
-### 3-G. [DXVK](https://github.com/doitsujin/dxvk/releases) (optional / only if you need it)
+### 3-I. [DXVK](https://github.com/doitsujin/dxvk/releases) (optional / only if you need it)
 DVXK is most useful for linux, and AMD graphics users. It can improve graphical performance by converting DirectX 9 calls to Vulkan. 
 There's a release of [VanillaFixes](https://github.com/hannesmann/vanillafixes/releases) that includes DVXK, or a more update to date version can be downloaded from the [github repository](https://github.com/doitsujin/dxvk/releases).
 Simply extract, and copy the 32bit d3d9.dll and dxgi.dll to your WoW folder.
 
-### 3-H. [Vanilla MultiMonitor Fix](https://github.com/Mates1500/VanillaMultiMonitorFix/releases) (optional / only if you need it)
+### 3-J. [Vanilla MultiMonitor Fix](https://github.com/Mates1500/VanillaMultiMonitorFix/releases) (optional / only if you need it)
 I haven't used this myself, but it fixes some issues that come with having multiple monitors of various resolutions. I have multiple monitors of the same resolution/frequency and never ran into issues.
 To install, extract the zip. You'll need to set `VMMFix_preferred_monitor.txt's` contents to your desired WoW monitor's index, as shown by running `ShowAllDisplayDevices.exe`. 
 It's automatically setup to be loaded by VanillaFixes, so you should immediately be good to go after modifying that txt.
@@ -165,33 +179,112 @@ When configuring addons in game be sure to logout once you've made changes to en
 If you're running into issues with addons, feel free to reach out in the #💾-addons-help channel. Someone may be able to help you out
 
 ### 4-D. Recommended Addons
+[PerfBoostSettings](https://gitea.com/avitasia/PerfBoostSettings) - Accompanying addon for PerfBoost, has many options for when and what to hide/cull from rendering (players, units, corpses, spell effects).
 [SuperAPI](https://github.com/balakethelock/SuperAPI) Mentioned above, it's the accompanying addon for SuperWoW that addons a mini map button to configure it's features.
+[NampowerSettings](https://gitea.com/avitasia/NampowerSettings) Mentioned above, configures the Nampower mod in game with a menu opened from the minimap button.
+
 *UI OVERHAULS*
-[PFui](https://github.com/shagu/pfUI)
-[ShaguTweaks](https://github.com/shagu/ShaguTweaks)
 [WC3 UI](https://github.com/Fiurs-Hearth/WIIIUI)
+[PFui](https://github.com/shagu/pfUI)
+[zUI](https://github.com/Ko0z/zUI) - PFui fork, complete UI replacement
+[ShaguTweaks](https://github.com/shagu/ShaguTweaks)
+[ShaguTweaks-extras](https://github.com/shagu/ShaguTweaks-extras)
+[ShaguTweaks-Mods](https://github.com/TokensWorth/ShaguTweaks-mods)
+[ShaguTweaks-More-Mods](https://github.com/CrimsonHollow/ShaguTweaks-more-mods)
 
 *Conveniences*
+[BetterHelp](https://github.com/neolectron/BetterHelp) - `/help` now shows slash commands from ALL installed addons. Also can do `/sl` for slashcommand list.
+[SuperInspect](https://github.com/vakos1/SuperInspect) - Lets you keep inspecting, even if you've lost your target
+[FineZoom](https://github.com/Stormhand81/FineZoom)
+[Mail](https://github.com/Thrunk112/Mail)
+[PizzaSlices](https://github.com/neimad-mp/PizzaSlices) - PizzaSlices lets you create custom rings, fill them with various types of actions and bind them to different keys. Seems like emote buttons
+[EmoteButtonsV2](https://github.com/tubtubs/EmoteButtons) - Emotes, Macros, Slash commands from an expanding series of buttons
+[Parchment](https://github.com/tubtubs/Parchment) - Note taking
+[HatTrick](https://github.com/vakos1/HatTrick) - Adds checkboxes to the character screen for cloak and helm display toggling
+[AntiAFK](https://github.com/acid9000/AntiAfk) - Prevents AFK, especially useful for scanning AH
+[QuickBind](https://github.com/DennisWG/QuickBind) - Adds hoverbind
+[BonusScanner](https://github.com/jrc13245/BonusScanner)
+
+*Aesthetics*
+[NosCursor](https://github.com/Beardedrasta/NosCursor) - Allows Customizing cursor
+[Aero](https://github.com/gashole/Aero) - Adds animation to frames
+[NewLevelFrame](https://github.com/alchem1ster/Vanilla-NewLevelFrame)
+[pfUI-fonts](https://github.com/shagu/pfUI-fonts)
+[NameChangeScript](https://github.com/zirtox1992/NameChangeScript)
+[ShaguWidget](https://github.com/shagu/ShaguWidget)
+[Extended Quest Log](https://github.com/laytya/EQL3)
+[BizzMo](https://github.com/Dyaxler/BlizzMo_Vanilla) - Allows you to move blizzard frames 
+
+*Automation*
+[LazyPig](https://github.com/ProKlutch/LazyPig) - The old standy for lots of automation, less efficient than newer addons though.
+[EasyLoot](https://github.com/MarcelineVQ/EasyLoot) - SuperWoW compliant, implements features from LazyPig (but more efficient) 
+[QuestRepeat](https://github.com/MarcelineVQ/QuestRepeat) SuperWoW compliant, implements fast quest turn in from LazyPig (but more efficient) 
+[DisableEscape](https://github.com/EinBaum/DisableEscape) - Prevents escape from closing summons, and invites
+[Automaton](https://gitlab.com/Artur91425/Automaton)
+
+*Combat/Raiding*
+[SP SwingTimer (SuperWoW support)](https://github.com/MarcelineVQ/SP_SwingTimer)
+[Cursive](https://github.com/pepopo978/Cursive) - Features for more efficient curse/debuff application, adds slash commands and tracking bars. Requires SuperWoW
+[Decursive](https://github.com/MarcelineVQ/Decursive)
+[Rinse](https://github.com/Otari98/Rinse) - Decursive, but more efficient and supporting client mods 
+[ShaguDPS](https://github.com/shagu/ShaguDPS)
+[AutoMana+](https://github.com/TheRealFayz/AutoManaPlus) - Automatically consume potions and more
+[GrimReaper](https://github.com/xorann/GrimReaper) - Shows the last 3 hits before you died
+[MiksScrollingCombatText](https://github.com/AtheneGenesis/Vanilla_MikScrollingBattleText)[1](https://github.com/pepopo978/Vanilla_MikScrollingBattleText)
+
+*Crafting*
+[AdvancedTradeSkillWindow2](https://github.com/Shellyoung/AdvancedTradeSkillWindow2)
+[Crafty](https://github.com/shirsig/crafty) - Adds search bar to crafting window
+[RecipeRadar](https://github.com/laytya/RecipeRadar-vanilla)
+[MissingCrafts](https://github.com/refaim/MissingCrafts)
+[FishingBuddy](https://github.com/SeVeN7000/FishingBuddy)[1](https://github.com/ilithyia-addons/FishingBuddy)
+[FishInfo2](https://github.com/wbb1977/FishInfo2)
+
+*Economy*
+[Aux (auctions)](https://github.com/acid9000/Aux-addon)[1](https://github.com/shirsig/aux-addon-vanilla)
+[Accountant](https://github.com/wow-vanilla-addons/Accountant)
+
+*Frames and Plates*
+[kUI-Namaplates](https://github.com/laytya/Kui-Namaplates) - Configurable name plates
+[TankPlates](https://github.com/MarcelineVQ/TankPlates) - SuperWoW compatible name plates, modifies unit's plates that aren't attacking you for easier tanking
+
+*Inventory*
+[MrPlow](https://github.com/McPewPew/MrPlow)
+[BagShui](https://github.com/Skillkrote/Bagshui)
+
+*Macros*
+[AntiSpamStopCast](https://github.com/thepparker/AntiSpamStopCast)
+[NoToggle](https://github.com/shirsig/notoggle) - Disables the toggling of auto attack
+[Attack](https://github.com/shirsig/attack) - Enables /attack command
+[MacroTT-V](https://github.com/UndercityAddons-Vanilla/MacroTT-V) - Adds tooltips to macros using new slash commands
+
+*Map*
+[Yatlas](https://github.com/Rumchiller/EM_Yatlas) - Minimap data based map, has many markers for graveyards, dungeons, and other points of interest
+[ModernMapMarkers-Vanilla](https://github.com/Drakensangs/ModernMapMarkers-Vanilla) - Adds map markers for many common points of interests (dungeons, graveyards, towns, etc)
+[Atlas](https://github.com/laytya/Atlas) - Dungeon maps, and loot tables
+
+*Questing/Gathering/Farming*
 [pfQuest](https://github.com/shagu/pfQuest)
 [pfQuest-icons](https://github.com/shagu/pfQuest-icons)
-[Accountant](https://github.com/wow-vanilla-addons/Accountant)
-[RecipeRadar](https://github.com/laytya/RecipeRadar-vanilla )
-[Atlas](https://github.com/laytya/Atlas)
-[Mail](https://github.com/Thrunk112/Mail)
-[LazyPig](https://github.com/ProKlutch/LazyPig) 
-[Crafty](https://github.com/shirsig/crafty) - Adds search bar to crafting window
-[BagShui](https://github.com/Skillkrote/Bagshui)
-[Aux (auctions)](https://github.com/shirsig/aux-addon-vanilla)
-[EmoteButtonsV2](https://github.com/tubtubs/EmoteButtons) - Emotes, Macros, Slash commands from an expanding series of buttons
-[ShaguDPS](https://github.com/shagu/ShaguDPS)
-[SP SwingTimer (SuperWoW support)](https://github.com/MarcelineVQ/SP_SwingTimer)
 [SoloRaidTargetIcons (Requires SuperWoW)](https://github.com/refaim/SoloRaidTargetIcons)
-[Parchment](https://github.com/tubtubs/Parchment) - Note taking
-[TankPlates](https://github.com/MarcelineVQ/TankPlates)
-[WIM](https://github.com/me0wg4ming/WIM)
+[UnitScan-Vanilla](https://github.com/shirsig/unitscan-vanilla)
+[ShaguScan](https://github.com/shagu/ShaguScan)
+[GrindSpots](https://github.com/onnateldome/GrindSpots)
+[MobsToLevel](https://github.com/idontbyte/MobsToLevel)
+[Estimated Time to Level](https://github.com/shirsig/ETL)
 
 *Silly*
 [Comix](https://github.com/Cysthen/Comix)
+[ChickenJockey](https://github.com/SwizzPop/ChickenJockey)
+[DrunkTracker](https://github.com/akzkak/DrunkTracker)
+[MorphHelper](https://github.com/tubtubs/MorphHelper) - Window, and slash commands for VanillaHelper's morph commands
+
+*Social*
+[WIM](https://github.com/me0wg4ming/WIM)
+[Friend-O-Tron](https://github.com/refaim/Friend-O-Tron) - Sync friend lists among toons on the same server
+
+*Buffs
+[DoiteAuras](https://github.com/Player-Doite/DoiteAuras) - WeakAuras for VanillaWoW? Requires Nampower and UnitXP_SP3
 
 Big addon lists:
 [Everlook](https://forum.everlook.org/t/list-of-github-addons/18)
@@ -217,8 +310,25 @@ You just need to move this .mpq file to the `Data` folder.
 ### [Darker Nights](https://www.ownedcore.com/forums/world-of-warcraft/world-of-warcraft-model-editing/599581-dark-nights-mod-vanilla-1-12-1-a.html)
 You just need to move this .mpq file to the `Data` folder.
 
+### [NoErrorSounds](https://github.com/Macumbafeh/NoErrorSounds/)
+Disables error sounds, in particular the spell fizzles when spamming.
+Download and extract to the `Sound` folder to the same folder as your wow.exe
+
+### [FishPing](https://github.com/notsureawake/FishPing)
+Makes the sound when a fish is on the line a lot more noticable. Adapted from another expansion, using new path but same sound.
+Download and extract to the `Sound` folder to the same folder as your wow.exe
+
+### [Classic-Snowfall](https://github.com/Linae-Kronos/Classic-Snowfall)
+Something about keybinds firing on "Key up" instead of "Key down", its an improvement I suppose.
+If you use pfUI's actionbars, simply enable the option "Actionbar -> General -> Trigger Actions On Key Down". 
+If you're not using pfUI's actionbars, then install the [Classic-Snowfall](https://github.com/Linae-Kronos/Classic-Snowfall) addon.
+
 ### Other Patches
 I'm not aware of, or interested in supporting any HD model packs. I've heard rumor of a nude patch, I may one day acquire this for myself... Purely for *very interesting* scientific purposes of course.
+* [More Sound Mods](https://turtle-wow.fandom.com/wiki/Sound_Mods)
+* [Turtle WoW Client Mods](https://turtle-wow.fandom.com/wiki/Client_Mods) - Many of these are designed for turtle wow, but you might have success using some here.
+
+[ImpulseBooster](https://github.com/Warlockbugs/impulse-booster) - I personally don't recommend it, it caused issues for me without any performance gain. Apparently it works better for TBC or WOTLK.
 
 ## 6. FAQ
 * I don't have a threat meter to recommend. Consult your raid leader, or fellow raiders for a tested, trusted meter.

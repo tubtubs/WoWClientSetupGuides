@@ -129,7 +129,7 @@ This mod has many options and keybind toggles for when and what to hide/cull fro
 Also has an [addon](https://gitea.com/avitasia/PerfBoostSettings) to configure this mod in game with a menu opened from the minimap button. This  can be installed manually (extract to `Interface/Addons` and rename the folder to `PerfBoostSettings`), or automatically using the git addon manager. More information in [4. ADDONS](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Wallcraft%20Client%20Guide.md#4-addons) section below.
 
 ### 3-G. [Interact](https://github.com/luskanek/Interact)
-Allows you to bind a key which you can then use to interact with the world around you. Can pick herbs, mine, or loot, talk to NPCs without using the mouse to target. However, will not automatically skin unfortunately.
+Allows you to bind a key which you can then use to interact with the world around you. Can pick herbs, mine, or loot, skin, and talk to NPCs without using the mouse to target. 
 Extract the entire zip to the same folder as your `wow.exe`, including the interface folder. You should enable this addon in game, and add the dll to the `dlls.txt`, which is coming up.
 
 ### 3-H. [VanillaFixes](https://github.com/hannesmann/vanillafixes/releases)

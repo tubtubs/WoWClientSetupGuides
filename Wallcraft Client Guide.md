@@ -237,7 +237,7 @@ When configuring addons in game be sure to logout once you've made changes to en
 
 *Economy*
 * [Aux (auctions)](https://github.com/acid9000/Aux-addon)* [1](https://github.com/shirsig/aux-addon-vanilla)
-* [Accountant](https://github.com/wow-vanilla-addons/Accountant)
+* [Accountant](https://github.com/The-Kludge-Bureau/Accountant)* [1](https://github.com/wow-vanilla-addons/Accountant)
 
 *Frames and Plates*
 * [kUI-Namaplates](https://github.com/laytya/Kui-Namaplates) - Configurable name plates

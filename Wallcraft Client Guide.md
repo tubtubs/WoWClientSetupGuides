@@ -96,7 +96,9 @@ The easiest way to access this setting is to search `Advanced System Settings` i
 [Screenshots](https://imgur.com/a/dep-data-execution-prevention-exception-L70Xeom)
 NOTE: The exception setting needs to be re-applied if you ever move your wow install to another directory.
 
-### 2-F. Popup on Launch "Needs to a valid 1.6-1.12.1 client" (paraphrasing, havent seen this in a while) from VanillaFixes
+### 2-F. Popup on Launch from VanillaFixes
+> DLL entry point returned an error (259) 
+> Make sure you have a compatible game client 1.6-1.12.1
 If it was working properly before it'll often work properly on 2nd try, or after a reboot. If the issue persists, check the antivirus to see if any of the client mod DLLs (nampower, vfpatcher, superwow, UnitXP_SP3) got flagged as malicious or quarantined.
 
 ## 3. CLIENT MODS
@@ -278,7 +280,7 @@ When configuring addons in game be sure to logout once you've made changes to en
 * [WIM](https://github.com/me0wg4ming/WIM)
 * [Friend-O-Tron](https://github.com/refaim/Friend-O-Tron) - Sync friend lists among toons on the same server
 
-*Buffs
+*Buffs*
 * [DoiteAuras](https://github.com/Player-Doite/DoiteAuras) - WeakAuras for VanillaWoW? Requires Nampower and UnitXP_SP3
 
 Big addon lists:

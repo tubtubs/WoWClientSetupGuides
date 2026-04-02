@@ -92,7 +92,7 @@ If this doesn't work, you can safely [delete the registry keys](https://www.revo
 > doesn't launch at all
 
 This relates more to client mods, which will be covered in the next section. Client mods often inject code, which can be flagged by windows services as malicious, so Windows likes to stop them from running. This Data Execution Prevention setting needs to be disabled for your wow, but should still be enabled globally for security.
-The easiest way to access this setting is to search `Advanced System Settings` in the search bar, click on `Settings` in the `performance` section, and then navigate to the `Data Execution Tab` at the top. The most secure setting would be to turn on for all programs, and make an exception for your wow.exe.
+The easiest way to access this setting is to search `Advanced System Settings` in the search bar, click on `Settings` in the `performance` section, and then navigate to the `Data Execution Tab` at the top. The most secure setting would be to turn on for all programs, and make an exception for your `wow-tweaked.exe`.
 [Screenshots](https://imgur.com/a/dep-data-execution-prevention-exception-L70Xeom)
 NOTE: The exception setting needs to be re-applied if you ever move your wow install to another directory.
 

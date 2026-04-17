@@ -81,6 +81,7 @@ To disable the cache, create a file called `wdb.txt`, then rename it to `wdb` re
 
 ### 2-D. Reset Settings Popup/Doesn't Launch
 > Hardware changed. Reload default settings? Popup
+
 > Doesn't launch
 
 You can always click no to this popup, but sometimes it draws in the background and it may just appear that wow isnt launching at all. You can see the popup in task manager (wow.exe, but very low memory usage less than 30mb) to confirm this is happening.
@@ -90,6 +91,7 @@ If this doesn't work, you can safely [delete the registry keys](https://www.revo
 
 ### 2-E. Doesn't Launch/Quickly Flashes on Screen  - [Data Execution Prevention](https://github.com/balakethelock/SuperWoW?tab=readme-ov-file#troubleshooting)
 > quickly flashes on screen
+
 > doesn't launch at all
 
 This relates more to client mods, which will be covered in the next section. Client mods often inject code, which can be flagged by windows services as malicious, so Windows likes to stop them from running. This Data Execution Prevention setting needs to be disabled for your wow, but should still be enabled globally for security.
@@ -99,13 +101,16 @@ NOTE: The exception setting needs to be re-applied if you ever move your wow ins
 
 ### 2-F. Popup on Launch from VanillaFixes
 > DLL entry point returned an error (259) 
+
 > Make sure you have a compatible game client 1.6-1.12.1
 
 If it was working properly before it'll often work properly on 2nd try, or after a reboot. If the issue persists, check the antivirus to see if any of the client mod DLLs (nampower, vfpatcher, superwow, UnitXP_SP3) got flagged as malicious or quarantined.
 
 ### 2-G. Artifacts/Render Issues on custom races or back ported models
 > [Example of the graphical issues](https://media.discordapp.net/attachments/1095939106963468380/1494602301271445514/V_20260415_221740_ES0.mp4?ex=69e3345c&is=69e1e2dc&hm=710bf7ecd267457c94f6fcf95879013f9ce54f5ccc51daecb182790a6107b4b1&) 
+
 > Video Credit ReynoldsCahoon
+
 > Often impacts HD patches
 
 You need to enable the Vertex Animation Shaders option in video options, the client must be restarted afterward to take effect. [Screenshots](https://imgur.com/a/7zQRxNW)

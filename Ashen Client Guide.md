@@ -102,6 +102,12 @@ NOTE: The exception setting needs to be re-applied if you ever move your wow ins
 > Make sure you have a compatible game client 1.6-1.12.1
 If it was working properly before it'll often work properly on 2nd try, or after a reboot. If the issue persists, check the antivirus to see if any of the client mod DLLs (nampower, vfpatcher, superwow, UnitXP_SP3) got flagged as malicious or quarantined.
 
+### 2-G. Artifacts/Render Issues on custom races or back ported models
+> [Example of the graphical issues](https://media.discordapp.net/attachments/1095939106963468380/1494602301271445514/V_20260415_221740_ES0.mp4?ex=69e3345c&is=69e1e2dc&hm=710bf7ecd267457c94f6fcf95879013f9ce54f5ccc51daecb182790a6107b4b1&) 
+> Video Credit ReynoldsCahoon
+> Often impacts HD patches
+You need to enable the Vertex Animation Shaders option in video options, the client must be restarted afterward to take effect. [Screenshots](https://imgur.com/a/7zQRxNW)
+
 ## 3. CLIENT MODS
 Make sure you check the [2-E. Data Execution Prevention](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#2-e-doesnt-launchquickly-flashes-on-screen----data-execution-prevention) section above to verify you have a Data Execution Prevention exception in place for these client mods.
 

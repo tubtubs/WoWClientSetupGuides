@@ -1,4 +1,4 @@
-
+AI Voice over I guess
 
 
 
@@ -41,27 +41,3 @@ https://github.com/mr-rosh/pfUI-addonskinner
 https://github.com/laytya/Ace3v
 
 https://github.com/MarcelineVQ/TrackTarget
-
-VanillaHelpers Minimap Tracking Addon
-https://github.com/isfir/MinimapTracking
-
-New Injections:
-WeirdUtils
-https://codeberg.org/MarcelineVQ/WeirdUtils
-
-VanillaHelpers64
-https://github.com/paokkerkir/VanillaHelpers64
-
-New Patches:
-
-Project Reforged: (HD Patch)
-https://projectreforged.github.io/
-
-Fog Pushback Patch:
-https://forum.turtlecraft.gg/viewtopic.php?t=10982
-
-WC3 Cursors:
-https://forum.turtlecraft.gg/viewtopic.php?p=66202
-
-Pretty Night Sky:
-https://forum.turtlecraft.gg/viewtopic.php?p=70273

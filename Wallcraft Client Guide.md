@@ -20,6 +20,7 @@ If you have any questions, concerns, or other feedback please let me know.
 * VanillaHelpers
 * PerfBoost
 * Interact
+* WeirdUtils
 * VanillaFixes
 * DVXK
 * Vanilla MultiMonitor Fix
@@ -48,7 +49,7 @@ Before playing on Wallcraft the `WDB` folder found in the Wallcraft folder must 
 To disable the cache, create a file called `wdb.txt`, then rename it to `wdb` removing the `.txt`. The downside is more downloading, and possibly longer loading times but on the other hand you'd never have to clear your cache.
 
 ### 1-D. EXTRACT PATCHES
-Download *ALL* the patches (.mpq files) from [Wallcraft.org](https://www.wallcraft.org/) after logging into the website, and extract them all to the `Data` folder in the Wallcraft folder.
+Download *ALL* the patches *INDIVIDUALLY* (.mpq files) from [Wallcraft.org](https://www.wallcraft.org/) after logging into the website, and extract them all to the `Data` folder in the Wallcraft folder. Make sure to download individually from google drive, not zipped up as this will corrupt them.
 
 ## 2. FIRST WAVE TROUBLESHOOTING
 Perform a first run of wow.exe, login, check your settings and see if you're running into any issues. Even if you're not running into any issues, you will need to do the steps in  2-E. Data Execution Prevention for client mods to work properly. Poor performance (lag, stuttering) maybe addressed by the client mods up next.
@@ -143,7 +144,29 @@ Also has an [addon](https://gitea.com/avitasia/PerfBoostSettings) to configure t
 Allows you to bind a key which you can then use to interact with the world around you. Can pick herbs, mine, or loot, skin, and talk to NPCs without using the mouse to target. Will be particularly helpful for people playing on steam decks, or gamepads.
 Extract the entire zip to the same folder as your `wow.exe`, including the interface folder. You should enable this addon in game, and add the dll to the `dlls.txt`, which is coming up.
 
-### 3-H. [VanillaFixes](https://github.com/hannesmann/vanillafixes/releases)
+### 3-H [WeirdUtils](https://codeberg.org/MarcelineVQ/WeirdUtils)
+There are lots of dlls to pick from, any that you decide to use must be added to `dlls.txt` in the next step. `weirdutils.dll/weirdutils_noperf.dll` includes all of them, but there are some that should be skipped so I recommend picking and choosing individual dlls.
+Recommended:
+* `healtextfix.dll` - Fixes the bug in SuperWoW that shows hex values in healing floating combat text
+* `minimapicons.dll` - Adds TBC/Wotlk style minimap tracking for NPCs. Gathering and hunter tracking supported. Adds an addon into the list, can be enabled/disabled.
+* `pngscreenshots.dll` - Saves screenshots as PNG without frame drop. Controlled via `screenshotQuality` CVAR
+* `/script SetCVar("screenshotQuality", "6")` -- set compression level (1 = fast, 9 = smallest, default 6)
+* `/script SetCVar("screenshotQuality", "0")` -- disable PNG, use original TGA format
+* `weirdperformance.dll` - Includes many interface, and math based performance boosts
+* `worldmarkers.dll` - Adds lua functions for placing cataclysm style world raid markers. 
+* Commands are: `/worldmarker 1` or `/wm 1`, `/wm 5 target` where target can be other unittokens like player/mouseover. `/clearworldmarker` to remove all, or `/cwm 1` to remove a specific one.
+
+Optional:
+* `bigcursor.dll` - Very nice for users with large monitors. DVXK can increase cursor size too
+* `clickthrough.dll` - SuperWoW already includes this functionality, though this implementation is  smarter though and doesn't require disabling to target corpses
+* `customassets.dll` - Allows loading loose assets, and oddly named patches from Data folder. Eg: `patch-12.mpq` or `patch-lewd.mpq`, `Data/Character/Troll/Female/TrollFemale.m2`
+* `logsessions.dll` - Could be useful for parsers. See readme for more info
+
+Skip: 
+- `transmogfix.dll` - not useful here
+- `weirdutils.dll/weirdutils_noperf.dll` - I suggest picking and choosing others, these include all/most of the other's features
+
+### 3-I. [VanillaFixes](https://github.com/hannesmann/vanillafixes/releases)
 This is the launcher that will load the dlls on rum time. Extract the zip into your WoW folder.
 In the wow folder you should now have a `dlls.txt`, open it and add the following lines to the bottom, for UnitSP_XP3 and VanillaHelpers, PerfBoost, and Interact support. The rest of the DLLs should be listed in there already.
 ```
@@ -153,17 +176,24 @@ UnitXP_SP3.dll
 VanillaHelpers.dll
 perf_boost.dll
 Interact.dll
+clickthrough.dll
+customassets.dll
+healtextfix.dll
+minimapicons.dll
+pngscreenshots.dll
+weirdperformance.dll
+worldmarkers.dll
 ```
 Next, make a shortcut to VanillaFixes.exe. 
 First, right click on VanillaFixes.exe and click `Create Shortcut`. Right click on the new shortcut, and click properties. Add `WoW_Tweaked.exe` after the quotes to the `Target` field. Click Apply, and Okay. Example: [(screenshot)](https://imgur.com/a/vanillafixes-shortcut-auWrnQq)
 You can use this [icon](https://www.wallcraft.org/favicon.ico) for a Wallcraft icon. Click `Change Icon` in the properties window, then click browse  and navigate to the icon. Click Apply, then Okay. Feel free to click and drag the shortcut to your task bar, desktop, or whatever.
 
-### 3-I. [DXVK](https://github.com/doitsujin/dxvk/releases)
+### 3-J. [DXVK](https://github.com/doitsujin/dxvk/releases)
 DVXK is most useful for linux, and AMD graphics users. It can improve graphical performance by converting DirectX 9 calls to Vulkan. 
 There's a release of [VanillaFixes](https://github.com/hannesmann/vanillafixes/releases) that includes DVXK, or a more update to date version can be downloaded from the [github repository](https://github.com/doitsujin/dxvk/releases).
 Simply extract, and copy the 32bit d3d9.dll and dxgi.dll to your game folder, where WoW.exe may be found.
 
-### 3-J. [Vanilla MultiMonitor Fix](https://github.com/Mates1500/VanillaMultiMonitorFix/releases)
+### 3-K. [Vanilla MultiMonitor Fix](https://github.com/Mates1500/VanillaMultiMonitorFix/releases)
 I haven't used this myself, but it fixes some issues that come with having multiple monitors of various resolutions. I have multiple monitors of the same resolution/frequency and never ran into issues.
 To install, extract the zip. You'll need to set `VMMFix_preferred_monitor.txt's` contents to your desired WoW monitor's index, as shown by running ShowAllDisplayDevices.exe. 
 It's automatically setup to be loaded by VanillaFixes, so you should immediately be good to go after modifying that txt.
@@ -299,21 +329,61 @@ Big addon lists:
 * [TurtleWoW - SuperWoW Compatible Addons](https://turtle-wow.fandom.com/wiki/Addons#SuperWoW_Addons)
 
 ## 5. BONUS PATCHES
+Patches are installed in the data folder, and must be named properly so as to avoid overwriting default, or Wallcraft patches. Generally, Patches 1-9 will be reserved for Wallcraft at the moment. Anything Patch-A.mpq to Patch-Z.mpq will generally be safe. Be sure to delete or disable WDB when attempting these patches.
+I will suggest a load order, but keep this warning in mind.
+```
+Patch-A.mpq - TBC Texture Pack
+patch-B.mpq - Blood Mod
+Patch-C.mpq - Paladin Mount Reskin
+Patch-F.mpq - Fog Pushback
+Patch-M.mpq - Old World Music Rescore
+Patch-S.mpq - Super WoW Selection Circle
+Patch-W.mpq - Intra's Water Patch
+Patch-Y.mpq - Pretty Night Sky
+Patch-Z.mpq - Dark Nights
+
+```
+
+### [Paladin Mount Reskin](https://www.mediafire.com/file/7r6fy8bncmvv7e4/Red_and_White_Paladin_Mount_Barding.zip/file)
+* By Kazgrim
+Adds Red or White barding to the paladin mounts. [Screenshots](https://imgur.com/a/S4CeHn1)
+
 ###  [TBC Texture Pack](https://mega.nz/file/4YtVlBZL#lwFFaaDEauWIZd0sW53gz8J0dyo_EhmnSsRvaclRwpA)
-This is an old pack, don't recall the original author. It replaces some vanilla textures mostly for buildings and ground with TBC textures.
+* Credit: [Finsternis](https://web.archive.org/web/20210925024810/https://model-changing.net/forums/topic/1744-environment-and-city-textures-author-finsternis/?tab=comments#comment-8540)
+It replaces some vanilla textures mostly for buildings and ground with TBC textures.
+
 ### [Old World Music Rescore](https://www.mediafire.com/file/017h0k7sgdlwlg4/Wallcraft_OldWorld_Rescore.zip/file)
+* Credit: Ported by Tubs, originally for WOTLK by Leeviathan 
 This is a custom ported music pack from future expansions. Tuned for Wallcraft.
 
-Extract both these patches, and rename them `Patch-Z.mpq` and `Patch-X.mpq`, and move them to your `Data` folder in the Wallcraft folder.
-Be sure to rename them first so they don't overwrite any of Wallcraft's patches. You may need to delete the `WDB` folder for these extra patches to take effect.
+### [Nercomancer Mod](https://github.com/IgnatiousTX/NecroModTurtleWoW/releases/tag/tag1)
+* Credit: Ignatious
+Replaces Imp, Voidwalker, Succubus and Felhunter models with Floating Skull, Skeletal Warrior, ghost, and Skeletam Mage including some voicelines.
+
 ### [Blood Mod](https://drive.google.com/file/d/1dtNAsN4DbB05ZRO7jVWt6gfDe79pxeDW/view)
+* Credit: [Ported by Vidooo @ TurtleWoW](https://forum.turtlecraft.gg/viewtopic.php?t=10934), originally for [WOTLK](https://www.youtube.com/watch?v=RFXzQbEK2vc)
 Just download and extract to the `Data` folder in your Wallcraft folder. This is called `Patch-Y.mpq` which shouldn't conflict with any other patches. Note, it might cause poor performance during raids.
 
-### [Intra's water patch](https://discord.com/channels/407664041016688662/1264693803395059742)
+### [Fog Pushback Patch](https://drive.google.com/file/d/14aHvyfr_ACL-UURbNa_fXRPcfQZoIw8n/)
+credit: [Vidooo @ TurtleWoW forums](https://forum.turtlecraft.gg/viewtopic.php?t=10982)
+Pushes back Vanilla's view distance fog, drastically increasing view distance. Use /console farclip at your own risk, vanilla does not render extremely high farclip distances with this mod too well. 
+eg: `/console farclip 1000`
+
+### [Pretty Night Sky](https://drive.google.com/file/d/1qu99ZS-SQFfTtYodBmZWYiHmxL8QtUY4/)
+credit: [Vidooo @ TurtleWoW forums](https://forum.turtlecraft.gg/viewtopic.php?p=70273)
+> The modded sky is only visible after 11:00pm server time when the unmodded stars regularly become available to see.
+
+### [Dark Nights](https://www.mediafire.com/file/enxkrjin7x4j9x8/Wotlk_Dark_Nights.zip)
+* Credits: [Elrena](https://www.wowmodding.net/files/file/2-darker-nights-cata/)
+Version of dark nights originally for wotlk/cataclysm, but works on Wallcraft. Only 1 darkness option unlike the dark nights mod for 1.12.1, the 1.12.1 dark nights mod will crash in Dalaran or other zones that weren't originally in Vanilla.
+
+### [Intra's Water Patch](https://discord.com/channels/407664041016688662/1264693803395059742)
 Imo the lighting isnt as good and its very transparent, but the animation looks very pretty.
 Could look into modding lightingparams.dbc to make it less transparent.
 [Mirror Link](https://www.mediafire.com/file/nlq456dkmmmkcym/patch-W.mpq/file)
-You just need to move this .mpq file to the `Data` folder.
+
+### [WarlockMutedDemons](https://github.com/spzilyk/Warlock-Muted-Demons)
+Replaces warlock minions voice lines with blank files. Just download and extract
 
 ### [NoErrorSounds](https://github.com/Macumbafeh/NoErrorSounds/)
 Disables error sounds, in particular the spell fizzles when spamming.
@@ -323,26 +393,32 @@ Download and extract to the `Sound` folder to the same folder as your wow.exe
 Makes the sound when a fish is on the line a lot more noticable. Adapted from another expansion, using new path but same sound.
 Download and extract to the `Sound` folder to the same folder as your wow.exe
 
+### [WC3 Cursors](https://www.mediafire.com/file/wb1l7gg0hpp0vz5/Cursor-Mod.rar/file)
+credit: [Shlendrian @ TurtleWoW forums](https://forum.turtlecraft.gg/viewtopic.php?p=66202)
+> Copied from Forum Post:
+> Made a little Warcraft 3 Cursor Interface Addon, should go well with Fiur's Warcraft 3 UI.
+> Please follow Readme.txt Instructions for proper Installation.
+
 ### [Classic-Snowfall](https://github.com/Linae-Kronos/Classic-Snowfall)
 Something about keybinds firing on "Key up" instead of "Key down", its an improvement I suppose.
 If you use pfUI's actionbars, simply enable the option "Actionbar -> General -> Trigger Actions On Key Down". 
 If you're not using pfUI's actionbars, then install the [Classic-Snowfall](https://github.com/Linae-Kronos/Classic-Snowfall) addon.
 
+### [Turtle-AutoLogin](https://github.com/MarcelineVQ/turtle-autologin)
+This patch adds a login manager to the login screen, saving credentials. Requires SuperWoW and Nampower.
+⚠️*WARNING:*⚠️ By default this mod stores locally, and doesn't encrypt credentials! Be sure to follow [these steps](https://github.com/MarcelineVQ/turtle-autologin) to create an environment variable, and enable encryption on the login screen. Logins are saved to `Imports/logins.txt` where you can check that they're being encrypted. Be wary if sharing your wow folder.
+To install just extract to the main folder, will place the files needed in `Data/Interface/GlueXML`.
+
+### Other Patches
+The few HD patches I've tried, including [Project Reforged](https://projectreforged.github.io/) cause crashes on Wallcraft with new races, and new zones. Porting could be possible, bits and pieces may be usable as well.
+[ImpulseBooster](https://github.com/Warlockbugs/impulse-booster) - I personally don't recommend it, it caused issues for me without any performance gain. Apparently it works better for TBC or WOTLK.
 * [More Sound Mods](https://turtle-wow.fandom.com/wiki/Sound_Mods)
 * [Turtle WoW Client Mods](https://turtle-wow.fandom.com/wiki/Client_Mods) - Many of these are designed for turtle wow, but you might have success using some here.
 
-### Other Patches
-Darker nights isn't currently supported, it will cause crashes in new zones added in Wallcraft (like Dalaran). I've heard rumor that Wall is planning on building Darker nights directly into Wallcraft on Launch. I'm not aware of, or interested in supporting any HD model packs. I've heard rumor of a nude patch, I may one day acquire this for myself... Purely for *very interesting* scientific purposes of course.
-[ImpulseBooster](https://github.com/Warlockbugs/impulse-booster) - I personally don't recommend it, it caused issues for me without any performance gain. Apparently it works better for TBC or WOTLK.
 
 ## 6. FAQ
 * I don't have a threat meter to recommend. Consult your raid leader, or fellow raiders for a tested, trusted meter.
-
+ * [VanillaHelpers64](https://github.com/paokkerkir/VanillaHelpers64/releases) - Probably unstable, haven't tried it. Could hep reduce memory pressure with HD patches though.
 TODO:
-* [PerfBoost](https://gitea.com/avitasia/perf_boost) - Performance boosting mod, accompanying [addon](https://gitea.com/avitasia/PerfBoostSettings)
-* [FishPing](https://gitea.com/avitasia/PerfBoostSettings)
-* [SuperWoW-Patch](https://github.com/turtlenips/superwow-patch) - Fixes the hex values from superwows healing in scbt? I think nampower fixes this actually
-* 
-
 * [pfUI-AddonSkinner](https://github.com/jrc13245/pfUI-addonskinner)
-* [no1600x1200](https://turtle-eu.b-cdn.net/client/0DF2274116278E8330DD7069902B642F1A83F33FEFD909807A22EDA197D88652/no1600x1200.dll) - Might be replaceable with the multimonitor fix, could be preferable since the source is lost
+* [no1600x1200] - Might be replaceable with the multimonitor fix, would be preferable since the source is lost for this one

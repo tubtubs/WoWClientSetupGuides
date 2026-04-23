@@ -159,7 +159,7 @@ Recommended:
 
 Optional:
 * `bigcursor.dll` - Very nice for users with large monitors. DVXK can increase cursor size too
-* `clickthrough.dll` - SuperWoW already includes this functionality, though this implementation is  smarter though and doesn't require disabling to target corpses
+* `clickthrough.dll` - SuperWoW already includes this functionality, though this implementation is  smarter though and doesn't require disabling to target corpses. Seems to target objects through NPCs though, rather odd.
 * `customassets.dll` - Allows loading loose assets, and oddly named patches from Data folder. Eg: `patch-12.mpq` or `patch-lewd.mpq`, `Data/Character/Troll/Female/TrollFemale.m2`
 * `logsessions.dll` - Could be useful for parsers. See readme for more info
 

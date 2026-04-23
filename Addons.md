@@ -32,6 +32,7 @@
 * [FlighTracker](https://github.com/tilare/FlightTracker) - Records flight times and costs and provides flight statistics.
 * [MinimapButtonFrame-vanilla](https://github.com/laytya/MinimapButtonFrame-vanilla)
 * [Inspector](https://github.com/doorknob6/Inspector) - Adds a more feature rich inspect window
+* [VanillaGraphicBoost](https://github.com/SNiTEBoBy/VanillaGraphicBoost) - Sets higher settings for graphics on login
 
 ## Aesthetics
 * [NosCursor](https://github.com/Beardedrasta/NosCursor) - Allows Customizing cursor

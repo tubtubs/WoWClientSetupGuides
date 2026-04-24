@@ -39,115 +39,82 @@
 * [SP SwingTimer (SuperWoW support)](https://github.com/MarcelineVQ/SP_SwingTimer)
 
 ## Conveniences
-* [BetterHelp](https://github.com/neolectron/BetterHelp) - `/help` now shows slash commands from ALL installed addons. Also can do `/sl` for slashcommand list.
-* [SuperInspect](https://github.com/vakos1/SuperInspect) - Lets you keep inspecting, even if you've lost your target
-* [FineZoom](https://github.com/Stormhand81/FineZoom)
-* [PizzaSlices](https://github.com/neimad-mp/PizzaSlices) - PizzaSlices lets you create custom rings, fill them with various types of actions and bind them to different keys. Seems like emote buttons
+### Radial Menus
+* [CompanionManager](https://github.com/sica42/CompanionManager) - Radial Menu for pets and stuff
 * [EmoteButtonsV2](https://github.com/tubtubs/EmoteButtons) - Emotes, Macros, Slash commands from an expanding series of buttons
+* [MinimapButtonFrame-vanilla](https://github.com/laytya/MinimapButtonFrame-vanilla)
+* [PizzaSlices](https://github.com/neimad-mp/PizzaSlices) - PizzaSlices lets you create custom rings, fill them with various types of actions and bind them to different keys. Seems like emote buttons
+
+### Notes
 * [Parchment](https://github.com/tubtubs/Parchment) - Note taking
-* [HatTrick](https://github.com/vakos1/HatTrick) - Adds checkboxes to the character screen for cloak and helm display toggling
-* [AntiAFK](https://github.com/acid9000/AntiAfk) - Prevents AFK, especially useful for scanning AH
-* [QuickBind](https://github.com/DennisWG/QuickBind) - Adds hoverbind
-* [BonusScanner](https://github.com/jrc13245/BonusScanner)
+* [Turtle-Journal](https://github.com/GitStrom/Turtle-Journal) - Note taking journal
+
+### Misc
+* [Altoholic_Vanilla](https://github.com/Dyaxler/Altoholic_Vanilla)
+* [FlightTracker](https://github.com/tilare/FlightTracker) - Records flight times and costs and provides flight statistics.
+* [JIM_toolbox](https://github.com/pushxd/JIM_toolbox) - Provides config for other addons
+* [MCP](https://github.com/FSuhas/MCP-TW) - Manage addons in game
+* [Mlooklock](https://github.com/rfelleto/Mlooklock) - Mouse look tweaks?
+* [Nauticus](https://github.com/Road-block/Nauticus) - Transport tracker
+* [Niagara](https://github.com/laytya/Niagara) - GUI for configuring all ACE2 addons using waterfall lib
+* [OOL](https://github.com/jejkas/OoI) - Oil of Immolation helper
+* [SelfFound](https://github.com/vortigern11/SelfFound) - Self found challenge mode
+
+## Aesthetics
+
+### Animations/Flare/Art
+* [Aero](https://github.com/gashole/Aero) - Adds animation to frames
+* [BetterAlign](https://github.com/DennisWG/BetterAlign) - A better version of Align for Vanilla WoW that adds draggable, mirrored helper bars as well as a tidy little GUI on top of the original Addon.
+* [CustomIcons](https://github.com/Tarkusx/CustomIcons)
+* [DiivSkins](https://github.com/McPewPew/DiivSkins) - will "paint" auxiliary images onto the two dimensional pane of your user interface
+* [eePanels-V](https://github.com/UndercityAddons-Vanilla/eePanels-V) - Create and place panels on your Vanilla World of Warcraft UI. Panels options are size, position, background color, border color, opacity, some limited texture support, and more.
+* [KeijinAchievementMonitor](https://github.com/KeijinDE/KeijinAchievementMonitor) - Standalone Achievement system
+* [NewLevelFrame](https://github.com/alchem1ster/Vanilla-NewLevelFrame)
+* [pfUI-CustomMedia](https://github.com/mr-rosh/pfUI-CustomMedia) - Provides a selection of custom textures to be used on your unitframes, castbar, xpbar, etc. New fonts, new button backgrounds, new gryphons.
+* [pfUI-addonskinner](https://github.com/mr-rosh/pfUI-addonskinner) - Addon provides you with pfUI-themed skins for other addons. It also allowse you to create and load your own skins.
+* [ShaguCombat](https://github.com/shagu/ShaguCombat) - When entering combat, the screenedges will start glowing red and fading till you leave combat.
+* [ShaguNotify](https://github.com/shagu/ShaguNotify) - Achievement notifications for certain events
+* [SpartUISpinCam](https://github.com/Daribon/SpartanUI_SpinCam)
+* [StealthOverlay](https://github.com/yutsuku/StealthOverlay) - slowly dims your screen when you enter Stealth
+
+
+### Cursor
+* [NosCursor](https://github.com/Beardedrasta/NosCursor) - Allows Customizing cursor
+* [MouseHighlightCircle](https://github.com/goamania/MouseHighlightCircle) - Adds a white circle around the cursor
+
+### Fonts
+* [pfUI-fonts](https://github.com/shagu/pfUI-fonts)
+
+### Widgets
 * [MonkeySpeed](https://github.com/MarcelineVQ/MonkeySpeed) - Displays your speed as percent of run speed (superwow enhanced?)
 * [Nitro](https://gitlab.com/woblight/nitro/-/tree/vanilla) - Displays movement speed
 * [Speedometer](https://github.com/sica42/Speedometer) - Displays movement speed
-* [SimpleActionSets](https://github.com/pepopo978/SimpleActionSets)[*](https://github.com/0ldi/SimpleActionSets) - Saves action bars?
-* [FlighTracker](https://github.com/tilare/FlightTracker) - Records flight times and costs and provides flight statistics.
-* [MinimapButtonFrame-vanilla](https://github.com/laytya/MinimapButtonFrame-vanilla)
-* [Inspector](https://github.com/doorknob6/Inspector) - Adds a more feature rich inspect window
-* [VanillaGraphicBoost](https://github.com/SNiTEBoBy/VanillaGraphicBoost) - Sets higher settings for graphics on login
-* [WoWRadio](https://github.com/Daribon/WowRadio)
-* [Altoholic_Vanilla](https://github.com/Dyaxler/Altoholic_Vanilla)
-* [EasyRess](https://github.com/Numielle/EasyRess) - Simplifies chain ressing and drinking.
-* [EQCompare-Vanilla](https://github.com/laytya/EQCompare-Vanilla) - Compare gear tooltip everywhere
-* [Outfitter](https://github.com/CosminPOP/Outfitter)
 * [ShaguClock](https://github.com/shagu/ShaguClock) - Movable Clock widget
-* [TalentSaver](https://github.com/MOUZU/Talentsaver)
-* [ColorPickerPlus](https://github.com/mr-rosh/ColorPickerPlus) - Adds improved features to the existing Blizzard color picker widget. Features like copying and pasting colors, RGBA channel values, hex value and color swatches for the old color and color in the copy buffer.
-* [CompanionManager](https://github.com/sica42/CompanionManager) - Radial Menu for pets and stuff
-* [ConsoleExperience](https://github.com/pepordev/ConsoleExperienceClassic) - GamePad support
-* [ConsumesManager](https://github.com/Cinecom/ConsumesManager)- Easily track and manage your consumables, food buffs, and more across your inventory, bank, and mail, while supporting multiple characters and accounts. 
-* [DestroyCursorItem](https://github.com/adrianocastro189/destroy-cursor-item) - Assign hotkey to delete item on cursor
-* [EquipColor](https://github.com/TrangOul/EquipColor) - colors unusable items red in the inventory and the bank. It also colors known recipes green in the inventory and the bank.
-* [FulllUIToggle](https://github.com/Otari98/FullSack) - Hides names when hiding the interface
-* [GamePad](https://github.com/yutsuku/Gamepad) - Controller Support
-* [Intellisense](https://github.com/jrc13245/IntelliSense) - Auto complete chat messages
-* [InventorySales](https://github.com/jejkas/InventorySale) - Converts inventory into BB code
-* [Turtle-Journal](https://github.com/GitStrom/Turtle-Journal) - Note taking journal
-* [JIM_toolbox](https://github.com/pushxd/JIM_toolbox) - Provides config for other addons
-* [KeyRingOpener](https://github.com/EinBaum/KeyringOpener) - Opens keyring automatically when opening all bags
-* [LookAtMouse](https://github.com/mitjafelicijan/LootAtMouse) - Opens loot window at mouse
-* [ManaMinder](https://github.com/melbaa/ManaMinder) - Manages mana consumes
-* [MCP](https://github.com/FSuhas/MCP-TW) - Manage addons in game
-* [Mlooklock](https://github.com/rfelleto/Mlooklock) - Mouse look tweaks?
-* [MouseOverSounds](https://github.com/ftkun/MouseOverSounds) - Plays a sound when mousing over rares elites or dangerous mobs
-* [MouseOverSoundsPvP](https://github.com/mikefirefly/MouseOverSounds_PvP) - Mouse over sounds for flagged players or NPCs
-* [MRE](https://github.com/shirsig/MRE) - Mana Rage Energy display
-* [MuteCities](https://github.com/KameleonUK/MuteCities) - Turns off music in SW/Org
-* [Nauticus](https://github.com/Road-block/Nauticus) - Transport tracker
-* [Niagara](https://github.com/laytya/Niagara) - GUI for configuring all ACE2 addons using waterfall lib
-* [ItemRack](https://github.com/McPewPew/ItemRack) [*](https://github.com/Otari98/ItemRack)
-* [OOL](https://github.com/jejkas/OoI) - Oil of Immolation helper
-* [PageTurner](https://github.com/ZythDr/PageTurner)
-* [reagentCounter](https://github.com/zetone/reagentCounter) - Displays reagent count on the spell's action button 
-* [ResourceCountActionButtons](https://github.com/jsb/ResourceCountActionButtons) - Displays how often you can cast a spell before you run out of resources on the action buttons 
-* [ScreenResolutionDropdownFix]https://github.com/jhinzuo/another.ScreenResolutionDropdownFix - Prevent errors in Video Options. /FrameXML\OptionsFrame.lua fix 
-* [SelfFound](https://github.com/vortigern11/SelfFound) - Self found challenge mode
-* [ShaguError](https://github.com/shagu/ShaguError) - hide error message popups 
 * [ShaguWidget](https://github.com/shagu/ShaguWidget)
 * [StopWatch](https://github.com/tdymel/StopWatch)
-* [Talentsaver](https://github.com/pepopo978/Talentsaver)
-* [__Anticrash](https://github.com/me0wg4ming/__Anticrash) - unregisters all frames on logout. idk if this is really necessary, saves nampower apparently
-* [ClassicSnowFall](https://github.com/Road-block/ClassicSnowFall) - Not needed if you hve pfUI. Does buttons on keydown?
-* [SoloRaidTargetIcons (Requires SuperWoW)](https://github.com/refaim/SoloRaidTargetIcons)
+* [TimeManager](https://github.com/gashole/TimeManager) - Ports Blizzard's clock from 2.4.3
 
-## Cooldown Tracking
-* [CooldownTimers](https://github.com/Road-block/CooldownTimers)
-* [Cooline](https://github.com/shirsig/cooline) - cooldown mod that displays icons on a single bar/line to give you an idea of when it will be ready
-* [CooldownTracker](https://github.com/Abstr4ctz/CooldownTracker) - a lightweight addon for World of Warcraft 1.12 (Vanilla) that helps you track the cooldowns of your important spells and items. It displays simple, movable icons on your screen that visually represent when your abilities are ready to use again.
-* [JIM_CooldownPulse](https://github.com/pushxd/JIM_CooldownPulse) - As spells, actions, and items become available, their icons will flash in a conspicuous place.
-* [cdframes](https://github.com/shirsig/cdframes) - Cooldown timers for player, target and targettarget.
-* [GCDisplay](https://github.com/MrDoufuru/GCDisplay) - Display your GCD, with the last spell that triggers it, as a circle reducing its size. It also plays a simple click sound on trigger
-
-
-## Aesthetics
-* [NosCursor](https://github.com/Beardedrasta/NosCursor) - Allows Customizing cursor
-* [Aero](https://github.com/gashole/Aero) - Adds animation to frames
-* [NewLevelFrame](https://github.com/alchem1ster/Vanilla-NewLevelFrame)
-* [pfUI-fonts](https://github.com/shagu/pfUI-fonts)
-* [NameChangeScript](https://github.com/zirtox1992/NameChangeScript)
-* [ShaguWidget](https://github.com/shagu/ShaguWidget)
-* [Extended Quest Log](https://github.com/laytya/EQL3)
+### Overhauled/Extended Frames
+* [BetterCharacterPanel](https://github.com/Arthur-Helias/BetterCharacterPanel/tree/main?tab=readme-ov-file)
 * [BizzMo](https://github.com/Dyaxler/BlizzMo_Vanilla) - Allows you to move blizzard frames 
-* [pfUI-CustomMedia](https://github.com/mr-rosh/pfUI-CustomMedia) - Provides a selection of custom textures to be used on your unitframes, castbar, xpbar, etc. New fonts, new button backgrounds, new gryphons.
-* [pfUI-addonskinner](https://github.com/mr-rosh/pfUI-addonskinner) - Addon provides you with pfUI-themed skins for other addons. It also allowse you to create and load your own skins.
-* [BetterAlign](https://github.com/DennisWG/BetterAlign) - A better version of Align for Vanilla WoW that adds draggable, mirrored helper bars as well as a tidy little GUI on top of the original Addon.
-* [ShaguNotify](https://github.com/shagu/ShaguNotify) - Achievement notifications for certain events
-* [CustomIcons](https://github.com/Tarkusx/CustomIcons)
-* [eePanels-V](https://github.com/UndercityAddons-Vanilla/eePanels-V) - Create and place panels on your Vanilla World of Warcraft UI. Panels options are size, position, background color, border color, opacity, some limited texture support, and more.
+* [CloseUp](https://github.com/Road-block/CloseUp) -  CharacterModel and DressingRoom Improvements (1.12) 
+* [Extended Quest Log](https://github.com/laytya/EQL3)
+* [HatTrick](https://github.com/vakos1/HatTrick) - Adds checkboxes to the character screen for cloak and helm display toggling
 * [HideErrorFrame](https://github.com/zirtox1992/HideErrorFrame)
-* [KeijinAchievementMonitor](https://github.com/KeijinDE/KeijinAchievementMonitor) - Standalone Achievement system
-* [ModUICombatTextStandalone](https://github.com/dogmax/ModUICombatTextStandalone)
-* [MouseHighlightCircle](https://github.com/goamania/MouseHighlightCircle) - Adds a white circle around the cursor
+* [Inspector](https://github.com/doorknob6/Inspector) - Adds a more feature rich inspect window
 * [MoveAnything](https://github.com/JembaWoW/MoveAnything)
-* [DiivSkins](https://github.com/McPewPew/DiivSkins) - will "paint" auxiliary images onto the two dimensional pane of your user interface
-* [ShaguCombat](https://github.com/shagu/ShaguCombat) - When entering combat, the screenedges will start glowing red and fading till you leave combat.
 * [SmallerRollFrames](https://github.com/DennisWG/SmallerRollFrames) 
-* [SpartUISpinCam](https://github.com/Daribon/SpartanUI_SpinCam)
 * [SpecialTalent](https://github.com/KrekoG/SpecialTalent) - needed for SpecialTalentUI
 * [SpecialTalentUI](https://github.com/KrekoG/SpecialTalentUI) - allows in game planning of talents
-* [StealthOverlay](https://github.com/yutsuku/StealthOverlay) - slowly dims your screen when you enter Stealth
-* [TimeManager](https://github.com/gashole/TimeManager) - Ports Blizzard's clock from 2.4.3
+* [SuperInspect](https://github.com/vakos1/SuperInspect) - Lets you keep inspecting, even if you've lost your target
 * [xLoot_Addons](https://github.com/Road-block/XLoot_AddOns) - Rolling and loot frames
-* [BattleMusic](https://github.com/zmarotrix/BattleMusic) [Music Pack](https://www.nexusmods.com/worldofwarcraft/mods/869)
-* [BetterCharacterPanel](https://github.com/Arthur-Helias/BetterCharacterPanel/tree/main?tab=readme-ov-file)
-* [CloseUp](https://github.com/Road-block/CloseUp) -  CharacterModel and DressingRoom Improvements (1.12) 
 
 ## Tooltips
 
 ### Enemies
 * [Codex](https://github.com/Chad90b/codex) - displays mob spells on mouseover
+* [MouseOverSounds](https://github.com/ftkun/MouseOverSounds) - Plays a sound when mousing over rares elites or dangerous mobs
+* [MouseOverSoundsPvP](https://github.com/mikefirefly/MouseOverSounds_PvP) - Mouse over sounds for flagged players or NPCs
 * [TurtleBeastiary](https://github.com/CamA-dev/TurtleBeastiary) - Shows what spells an NPC has on tooltip
 
 ### Items (Stock)
@@ -157,9 +124,10 @@
 * [WhoHas](https://github.com/Road-block/WhoHas) - Item counts on tooltip for other characters/alts
 
 ### Items Info
+* [EQCompare-Vanilla](https://github.com/laytya/EQCompare-Vanilla) - Compare gear tooltip everywhere
+* [EquipCompare](https://legacy-wow.com/vanilla-addons/equipcompare/)
 * [ItemIDTooltip](https://github.com/cyaohiri/ItemIDTooltip) - Adds item ID to tooltips
 * [ItemTooltipIcons](https://github.com/refaim/ItemTooltipIcons) - enhances item tooltips by displaying profession icons for crafting ingredients.
-* [EquipCompare](https://legacy-wow.com/vanilla-addons/equipcompare/)
 * [Mendeleev](https://github.com/laytya/Mendeleev)
 * [MoPGearTooltips](https://github.com/Zebouski/MoPGearTooltips/tree/masterturtle)
 * [SellValue](https://github.com/anzz1/SellValue) - Adds vendor prices to tooltips for vanilla WoW (1.12.1) 
@@ -212,9 +180,15 @@
 ### Dialog Skips
 * [ShaguBop](https://github.com/shagu/ShaguBoP) - auto accepts BoP loot when alone 
 
+### Talent Saving
+* [Talentsaver](https://github.com/pepopo978/Talentsaver) [1](https://github.com/MOUZU/Talentsaver)
+
+### Action Bar Saving
+* [ShaguActions](https://github.com/shagu/ShaguActions) -  Save and restore actionbar setups for each skill tree 
+* [SimpleActionSets](https://github.com/pepopo978/SimpleActionSets)[*](https://github.com/0ldi/SimpleActionSets) - Saves action bars?
+
 ### Misc
 * [Lern2Spell](https://github.com/mr-rosh/Lern2Spell) - Upgrades spell ranks on your action bars
-* [ShaguActions](https://github.com/shagu/ShaguActions) -  Save and restore actionbar setups for each skill tree 
 
 
 ## Action Bars
@@ -225,23 +199,63 @@
 * [GryllsBongos](https://github.com/carolluparu/GryllsBongos) - extends bongos
 * [HBActionBars](https://github.com/SimonPurdie/HBActionBars)
 * [HideUI](https://github.com/JakiraElysium/HideUI) - Hides the icons at the end of actionbars
+* [ResourceCountActionButtons](https://github.com/jsb/ResourceCountActionButtons) - Displays how often you can cast a spell before you run out of resources on the action buttons 
+* [reagentCounter](https://github.com/zetone/reagentCounter) - Displays reagent count on the spell's action button 
 
 ## Equipment
 * [GearMenu](https://github.com/RagedUnicorn/wow-vanilla-gearmenu)
+* [ItemRack](https://github.com/McPewPew/ItemRack) [*](https://github.com/Otari98/ItemRack)
 * [TrinketMenu](https://github.com/satan666/TrinketMenu-Fix)
+* [Outfitter](https://github.com/CosminPOP/Outfitter)
+
+### Music
+* [BattleMusic](https://github.com/zmarotrix/BattleMusic) [Music Pack](https://www.nexusmods.com/worldofwarcraft/mods/869)
+* [WoWRadio](https://github.com/Daribon/WowRadio)
+
+
+## GamePad/Console Gaming
+* [ConsoleExperience](https://github.com/pepordev/ConsoleExperienceClassic) - GamePad support
+* [GamePad](https://github.com/yutsuku/Gamepad) - Controller Support
 
 ## Misc. Enhancements
+* [__Anticrash](https://github.com/me0wg4ming/__Anticrash) - unregisters all frames on logout. idk if this is really necessary, saves nampower apparently
+* [AntiAFK](https://github.com/acid9000/AntiAfk) - Prevents AFK, especially useful for scanning AH. Might not work tho
+* [BetterHelp](https://github.com/neolectron/BetterHelp) - `/help` now shows slash commands from ALL installed addons. Also can do `/sl` for slashcommand list.
+* [BonusScanner](https://github.com/jrc13245/BonusScanner)
+* [ClassicSnowFall](https://github.com/Road-block/ClassicSnowFall) - Not needed if you hve pfUI. Does buttons on keydown?
+* [ColorPickerPlus](https://github.com/mr-rosh/ColorPickerPlus) - Adds improved features to the existing Blizzard color picker widget. Features like copying and pasting colors, RGBA channel values, hex value and color swatches for the old color and color in the copy buffer.
+* [DestroyCursorItem](https://github.com/adrianocastro189/destroy-cursor-item) - Assign hotkey to delete item on cursor
 * [DisableEscape](https://github.com/EinBaum/DisableEscape) - Prevents escape from closing summons, and invites
+* [EquipColor](https://github.com/TrangOul/EquipColor) - colors unusable items red in the inventory and the bank. It also colors known recipes green in the inventory and the bank.
+* [FineZoom](https://github.com/Stormhand81/FineZoom)
+* [FulllUIToggle](https://github.com/Otari98/FullSack) - Hides names when hiding the interface
 * [GentleGC](https://github.com/MarcelineVQ/GentleGC) - Gentle Garbage Collection
+* [KeyRingOpener](https://github.com/EinBaum/KeyringOpener) - Opens keyring automatically when opening all bags
 * [LagCast](https://github.com/Johnmichael/LagCast) - Supposed to help casters with latency
 * [Lager](https://github.com/ZenSociety/Lager) - reduces lag by pausing superfluous combat log
+* [LookAtMouse](https://github.com/mitjafelicijan/LootAtMouse) - Opens loot window at mouse
+* [MuteCities](https://github.com/KameleonUK/MuteCities) - Turns off music in SW/Org
+* [NameChangeScript](https://github.com/zirtox1992/NameChangeScript)
+* [PageTurner](https://github.com/ZythDr/PageTurner) - Adds hotkey for turning pages at vendors
+* [QuickBind](https://github.com/DennisWG/QuickBind) - Adds hoverbind
 * [RezzTimer](https://github.com/EinBaum/RezzTimer) - Shares res timers with party and raid members
+* [ScreenResolutionDropdownFix]https://github.com/jhinzuo/another.ScreenResolutionDropdownFix - Prevent errors in Video Options. /FrameXML\OptionsFrame.lua fix 
+* [ShaguError](https://github.com/shagu/ShaguError) - hide error message popups 
 * [SmartRestore](https://github.com/Dauls/SmartRestore) - will use the most appropriate potion, bandage, food or drink, depending on the situation. 
+* [SoloRaidTargetIcons (Requires SuperWoW)](https://github.com/refaim/SoloRaidTargetIcons)
 * [TrackTarget](https://github.com/MarcelineVQ/TrackTarget) - Track on the minimap any friendly you target which is assistable. One that you could used a heal on for instance. Attempts to target player chosen in friend's list or guild roster on click if in the same zone.
-
-
+* [VanillaGraphicBoost](https://github.com/SNiTEBoBy/VanillaGraphicBoost) - Sets higher settings for graphics on login
 
 ## Combat/Raiding
+
+### Cooldown Tracking
+* [cdframes](https://github.com/shirsig/cdframes) - Cooldown timers for player, target and targettarget.
+* [CooldownTimers](https://github.com/Road-block/CooldownTimers)
+* [Cooline](https://github.com/shirsig/cooline) - cooldown mod that displays icons on a single bar/line to give you an idea of when it will be ready
+* [CooldownTracker](https://github.com/Abstr4ctz/CooldownTracker) - a lightweight addon for World of Warcraft 1.12 (Vanilla) that helps you track the cooldowns of your important spells and items. It displays simple, movable icons on your screen that visually represent when your abilities are ready to use again.
+* [GCDisplay](https://github.com/MrDoufuru/GCDisplay) - Display your GCD, with the last spell that triggers it, as a circle reducing its size. It also plays a simple click sound on trigger
+* [JIM_CooldownPulse](https://github.com/pushxd/JIM_CooldownPulse) - As spells, actions, and items become available, their icons will flash in a conspicuous place.
+
 ### Raiding
 * [BananaBar](https://github.com/balakethelock/bananabar) - Allows you to select marked units with ease
 * [GrimReaper](https://github.com/xorann/GrimReaper) - Shows the last 3 hits before you died
@@ -275,6 +289,7 @@
 
 ### Scrolling Combat Text
 * [MiksScrollingCombatText](https://github.com/AtheneGenesis/Vanilla_MikScrollingBattleText)* [1](https://github.com/pepopo978/Vanilla_MikScrollingBattleText)
+* [ModUICombatTextStandalone](https://github.com/dogmax/ModUICombatTextStandalone)
 
 ### Buffs/Debuffs
 * [BuffAlert](https://github.com/brunt/BuffAlert) - play a sound when you gain a specific buff.
@@ -297,6 +312,7 @@
 
 ### Healing
 * [Clique](https://github.com/MarcelineVQ/Clique) [1](https://github.com/shagu/Clique) - Click casting
+* [EasyRess](https://github.com/Numielle/EasyRess) - Simplifies chain ressing and drinking.
 * [HCSpy](https://github.com/Sulpitz/HCSpy) - Tells you who's using healcomm
 * [HealComm](https://github.com/Otari98/HealComm)
 * [Healbot-classic](https://github.com/yogo1212/healbot-classic)
@@ -333,6 +349,9 @@
 
 ### Consumes
 * [AutoMana+](https://github.com/TheRealFayz/AutoManaPlus) - Automatically consume potions and more
+* [ManaMinder](https://github.com/melbaa/ManaMinder) - Manages mana consumes
+* [ConsumesManager](https://github.com/Cinecom/ConsumesManager)- Easily track and manage your consumables, food buffs, and more across your inventory, bank, and mail, while supporting multiple characters and accounts. 
+
 
 ### Misc Info
 * [InstanceJournal](https://github.com/Arthur-Helias/InstanceJournal)
@@ -400,6 +419,7 @@
 ## Economy
 * [Aux (auctions)](https://github.com/acid9000/Aux-addon)* [1](https://github.com/shirsig/aux-addon-vanilla)
 * [Accountant](https://github.com/The-Kludge-Bureau/Accountant)* [1](https://github.com/wow-vanilla-addons/Accountant)
+* [InventorySales](https://github.com/jejkas/InventorySale) - Converts inventory into BB code
 * [Vizput](https://github.com/gregdeichler/Vizput) - Bulk AH posting
 
 ## Frames and Plates
@@ -432,6 +452,7 @@
 * [CleanPlayerFrame](https://github.com/wbb1977/CleanPlayerFrame)
 * [CoolHealthBar](https://github.com/Redbu11dev/CoolHealthBar) - Extra health and power bar
 * [ModUI-TallHealthBar](https://github.com/gashole/modui-TallHealthBar)
+* [MRE](https://github.com/shirsig/MRE) - Mana Rage Energy display
 * [SimpleBars](https://github.com/Beardedrasta/SimpleBars)
 * [UnitFramesImproved_Vanilla](https://github.com/Ko0z/UnitFramesImproved_Vanilla) - Backport of UnitFramesImproved
 * [xPerl](https://github.com/Redbu11dev/X-Perl-UnitFrames)
@@ -606,6 +627,7 @@
 * [QuickChat](https://github.com/0ldi/QuickChat) - This addon allows you to assing Hotkeys to all your channels.
 * [ShaguChat](https://github.com/shagu/ShaguCopy) - allows to copy chat messages 
 * [UnicodeFont](https://github.com/Daribon/UnicodeFont) - Helps reading other languages when not using that client's locale
+* [Intellisense](https://github.com/jrc13245/IntelliSense) - Auto complete chat messages
 ### Filtering
 * [CrapFilter](https://github.com/Metalgrid/crapfilter) - Chat Filtering
 * [WorldFilter](https://github.com/twothe/WorldFilter)

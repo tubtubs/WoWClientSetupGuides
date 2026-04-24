@@ -102,10 +102,6 @@
 * [ClassicSnowFall](https://github.com/Road-block/ClassicSnowFall) - Not needed if you hve pfUI. Does buttons on keydown?
 * [SoloRaidTargetIcons (Requires SuperWoW)](https://github.com/refaim/SoloRaidTargetIcons)
 
-
-
-
-
 ## Cooldown Tracking
 * [CooldownTimers](https://github.com/Road-block/CooldownTimers)
 * [Cooline](https://github.com/shirsig/cooline) - cooldown mod that displays icons on a single bar/line to give you an idea of when it will be ready
@@ -128,10 +124,8 @@
 * [pfUI-addonskinner](https://github.com/mr-rosh/pfUI-addonskinner) - Addon provides you with pfUI-themed skins for other addons. It also allowse you to create and load your own skins.
 * [BetterAlign](https://github.com/DennisWG/BetterAlign) - A better version of Align for Vanilla WoW that adds draggable, mirrored helper bars as well as a tidy little GUI on top of the original Addon.
 * [ShaguNotify](https://github.com/shagu/ShaguNotify) - Achievement notifications for certain events
-* [CMap](https://github.com/turinpt/CMap) - Backport of Sexymap
 * [CustomIcons](https://github.com/Tarkusx/CustomIcons)
 * [eePanels-V](https://github.com/UndercityAddons-Vanilla/eePanels-V) - Create and place panels on your Vanilla World of Warcraft UI. Panels options are size, position, background color, border color, opacity, some limited texture support, and more.
-* [ES](https://github.com/Smirgeli/ES) - Execute Sound similiar to wotlk
 * [HideErrorFrame](https://github.com/zirtox1992/HideErrorFrame)
 * [KeijinAchievementMonitor](https://github.com/KeijinDE/KeijinAchievementMonitor) - Standalone Achievement system
 * [ModUICombatTextStandalone](https://github.com/dogmax/ModUICombatTextStandalone)
@@ -145,78 +139,106 @@
 * [SpecialTalentUI](https://github.com/KrekoG/SpecialTalentUI) - allows in game planning of talents
 * [StealthOverlay](https://github.com/yutsuku/StealthOverlay) - slowly dims your screen when you enter Stealth
 * [TimeManager](https://github.com/gashole/TimeManager) - Ports Blizzard's clock from 2.4.3
-* [TopMeOff](https://github.com/melbaa/TopMeOff) - Automatically tops you off with reagants at a vendor
 * [xLoot_Addons](https://github.com/Road-block/XLoot_AddOns) - Rolling and loot frames
 * [BattleMusic](https://github.com/zmarotrix/BattleMusic) [Music Pack](https://www.nexusmods.com/worldofwarcraft/mods/869)
 * [BetterCharacterPanel](https://github.com/Arthur-Helias/BetterCharacterPanel/tree/main?tab=readme-ov-file)
 * [CloseUp](https://github.com/Road-block/CloseUp) -  CharacterModel and DressingRoom Improvements (1.12) 
 
 ## Tooltips
-* [TinyTip](https://github.com/EinBaum/TinyTip)
+
+### Enemies
 * [Codex](https://github.com/Chad90b/codex) - displays mob spells on mouseover
-* [CorpseInfo](https://github.com/wbb1977/CorpseInfo)
-* [EquipCompare](https://legacy-wow.com/vanilla-addons/equipcompare/)
+* [TurtleBeastiary](https://github.com/CamA-dev/TurtleBeastiary) - Shows what spells an NPC has on tooltip
+
+### Items (Stock)
 * [FullSack](https://github.com/Otari98/FullSack) - Shows item counts and money for other characters
-* [ItemHints](https://github.com/Road-block/ItemHints) - ItemHints puts notes on tooltip items in bags, loot and rollframe, auction, merchant, quests or linked in chat that
+* [Possessions](https://github.com/refaim/Possessions) - Provides a searchable and filterable list of all items across all your characters on a single account. 
+* [ShaguInventory](https://github.com/shagu/ShaguInventory) - Keeps track of item counts on tooltips
+* [WhoHas](https://github.com/Road-block/WhoHas) - Item counts on tooltip for other characters/alts
+
+### Items Info
 * [ItemIDTooltip](https://github.com/cyaohiri/ItemIDTooltip) - Adds item ID to tooltips
 * [ItemTooltipIcons](https://github.com/refaim/ItemTooltipIcons) - enhances item tooltips by displaying profession icons for crafting ingredients.
+* [EquipCompare](https://legacy-wow.com/vanilla-addons/equipcompare/)
 * [Mendeleev](https://github.com/laytya/Mendeleev)
 * [MoPGearTooltips](https://github.com/Zebouski/MoPGearTooltips/tree/masterturtle)
-* [ManyQTItemTooltips](https://github.com/AtheneGenesis/Vanilla_ManyQTItemTooltips) - Allows up to 20 tooltips to be open at once
 * [SellValue](https://github.com/anzz1/SellValue) - Adds vendor prices to tooltips for vanilla WoW (1.12.1) 
-* [ShaguTooltips](https://github.com/shagu/ShaguTooltips)
 * [VanillaRatingBuster](https://github.com/kxseven/VanillaRatingBuster)
-* [WhoHas](https://github.com/Road-block/WhoHas) - Item counts on tooltip for other characters/alts
-* [TurtleBeastiary](https://github.com/CamA-dev/TurtleBeastiary) - Shows what spells an NPC has on tooltip
-* [ShaguInventory](https://github.com/shagu/ShaguInventory) - Keeps track of item counts on tooltips
-* [Possessions](https://github.com/refaim/Possessions) - Provides a searchable and filterable list of all items across all your characters on a single account. 
+
+### Players
+* [CorpseInfo](https://github.com/wbb1977/CorpseInfo)
+
+### Misc
+* [ItemHints](https://github.com/Road-block/ItemHints) - ItemHints puts notes on tooltip items in bags, loot and rollframe, auction, merchant, quests or linked in chat that
+* [ManyQTItemTooltips](https://github.com/AtheneGenesis/Vanilla_ManyQTItemTooltips) - Allows up to 20 tooltips to be open at once
+* [ShaguTooltips](https://github.com/shagu/ShaguTooltips)
+* [TinyTip](https://github.com/EinBaum/TinyTip)
 
 ## Automation
-* [LazyPig](https://github.com/jrc13245/_LazyPig) [1](https://github.com/ProKlutch/LazyPig) [2](https://github.com/Otari98/_LazyPig) - The old standy for lots of automation, less efficient than newer addons though.
-* [EasyLoot](https://github.com/MarcelineVQ/EasyLoot) - SuperWoW compliant, implements features from LazyPig (but more efficient) 
-* [QuestRepeat](https://github.com/MarcelineVQ/QuestRepeat) SuperWoW compliant, implements fast quest turn in from LazyPig (but more efficient) 
-* [QuestHaste](https://gitlab.com/woblight/QuestHaste/-/tree/vanilla) - QuestHaste is a small Addon for vanilla World of Warcraft (1.12), it allows fast turn in of quests, especially useful for repeatable quests (e.g. Alterac Valley quests)
-* [DisableEscape](https://github.com/EinBaum/DisableEscape) - Prevents escape from closing summons, and invites
+
+### Bundles
 * [Automaton](https://gitlab.com/Artur91425/Automaton)
-* [_AutoBG](https://github.com/EinBaum/_AutoBG) - Auto-queue, join, leave battlegrounds & instant spirit release.
-* [VendorAutoBuy](https://github.com/EinBaum/VendorAutoBuy)
-* [EzDismount](https://github.com/laytya/EzDismount)
-* [GentleGC](https://github.com/MarcelineVQ/GentleGC) - Gentle Garbage Collection
-* [KeijinAutoVendor](https://github.com/KeijinDE/KeijinAutoVendor) - KeijinAutoVendor is a lightweight addon that automatically sells poor quality (gray) items and repairs your gear when visiting a vendor.
+* [LazyPig](https://github.com/jrc13245/_LazyPig) [1](https://github.com/ProKlutch/LazyPig) [2](https://github.com/Otari98/_LazyPig) - The old standy for lots of automation, less efficient than newer addons though.
 * [LazyWeirdo](https://github.com/MarcelineVQ/LazyWeirdo) - LazyPig replacement?
-* [Lern2Spell](https://github.com/mr-rosh/Lern2Spell) - Upgrades spell ranks on your action bars
-* [pfUI-lazyres](https://github.com/liiora/pfUI-lazyres) - This addon is an external module for pfUI addon that makes resurrecting the raid after a wipe easy.
-* [ShaguActions](https://github.com/shagu/ShaguActions) -  Save and restore actionbar setups for each skill tree 
-* [ShaguBop](https://github.com/shagu/ShaguBoP) - auto accepts BoP loot when alone 
+
+### Vendor
+* [AutoProfit](https://github.com/Road-block/AutoProfit) - Sell trash to a vendor
+* [KeijinAutoVendor](https://github.com/KeijinDE/KeijinAutoVendor) - KeijinAutoVendor is a lightweight addon that automatically sells poor quality (gray) items and repairs your gear when visiting a vendor.
 * [ShaguJunk](https://github.com/shagu/ShaguJunk) - automatically sell and delete specified items 
-* [ShaguMount](https://github.com/shagu/ShaguMount) - automatically unmounts the player when using an action 
+* [TopMeOff](https://github.com/melbaa/TopMeOff) - Automatically tops you off with reagants at a vendor
 * [VendorAutoBuy](https://github.com/EinBaum/VendorAutoBuy)
 * [VendorList](https://github.com/MarcelineVQ/VendorList) -  automatic vendoring of listed items 
 * [vPeddler](https://github.com/ZythDr/vPeddler) - Junk selling addon
-* [AutoDecline](https://github.com/McPewPew/AutoDecline) - Automatically declines party,guild,duel,charter invites
-* [AutoProfit](https://github.com/Road-block/AutoProfit) - Sell trash to a vendor
+
+### Quest
 * [AutoQuest](https://github.com/MickeyPickey/AutoQuest) - Addon that instantly auto-accepts quests and auto-turns in quests for the WoW 1.12 vanilla API. 
 * [AutoTurnIn](https://github.com/Valiusha90/AutoTurnIn)
+* [QuestRepeat](https://github.com/MarcelineVQ/QuestRepeat) SuperWoW compliant, implements fast quest turn in from LazyPig (but more efficient) 
+* [QuestHaste](https://gitlab.com/woblight/QuestHaste/-/tree/vanilla) - QuestHaste is a small Addon for vanilla World of Warcraft (1.12), it allows fast turn in of quests, especially useful for repeatable quests (e.g. Alterac Valley quests)
+
+### PVP Automation
+* [_AutoBG](https://github.com/EinBaum/_AutoBG) - Auto-queue, join, leave battlegrounds & instant spirit release.
+
+### Dismount
+* [ShaguMount](https://github.com/shagu/ShaguMount) - automatically unmounts the player when using an action 
+* [EzDismount](https://github.com/laytya/EzDismount)
+
+### Loot
+* [EasyLoot](https://github.com/MarcelineVQ/EasyLoot) - SuperWoW compliant, implements features from LazyPig (but more efficient) 
+
+### AutoDeclines
+* [AutoDecline](https://github.com/McPewPew/AutoDecline) - Automatically declines party,guild,duel,charter invites
+
+### Dialog Skips
+* [ShaguBop](https://github.com/shagu/ShaguBoP) - auto accepts BoP loot when alone 
+
+### Misc
+* [Lern2Spell](https://github.com/mr-rosh/Lern2Spell) - Upgrades spell ranks on your action bars
+* [ShaguActions](https://github.com/shagu/ShaguActions) -  Save and restore actionbar setups for each skill tree 
+
 
 ## Action Bars
+* [Bartender2](https://github.com/McPewPew/Bartender2-Read-Instructions)
+* [Bongos](https://github.com/jacamo555/Bongos)
+* [cyCircled](https://github.com/retrospectx/cyCircled) -  changes the look of various buttons (mostly action bar buttons) [img](https://imgur.com/fmatXIX)
 * [DiscordActionBars](https://github.com/UndercityAddons-Vanilla/DiscordActionBars)
 * [GryllsBongos](https://github.com/carolluparu/GryllsBongos) - extends bongos
 * [HBActionBars](https://github.com/SimonPurdie/HBActionBars)
 * [HideUI](https://github.com/JakiraElysium/HideUI) - Hides the icons at the end of actionbars
-* [cyCircled](https://github.com/retrospectx/cyCircled) -  changes the look of various buttons (mostly action bar buttons) [img](https://imgur.com/fmatXIX)
-* [Bartender2](https://github.com/McPewPew/Bartender2-Read-Instructions)
-* [Bongos](https://github.com/jacamo555/Bongos)
 
 ## Equipment
 * [GearMenu](https://github.com/RagedUnicorn/wow-vanilla-gearmenu)
 * [TrinketMenu](https://github.com/satan666/TrinketMenu-Fix)
 
 ## Misc. Enhancements
-* [TrackTarget](https://github.com/MarcelineVQ/TrackTarget) - Track on the minimap any friendly you target which is assistable. One that you could used a heal on for instance. Attempts to target player chosen in friend's list or guild roster on click if in the same zone.
+* [DisableEscape](https://github.com/EinBaum/DisableEscape) - Prevents escape from closing summons, and invites
+* [GentleGC](https://github.com/MarcelineVQ/GentleGC) - Gentle Garbage Collection
 * [LagCast](https://github.com/Johnmichael/LagCast) - Supposed to help casters with latency
 * [Lager](https://github.com/ZenSociety/Lager) - reduces lag by pausing superfluous combat log
 * [RezzTimer](https://github.com/EinBaum/RezzTimer) - Shares res timers with party and raid members
 * [SmartRestore](https://github.com/Dauls/SmartRestore) - will use the most appropriate potion, bandage, food or drink, depending on the situation. 
+* [TrackTarget](https://github.com/MarcelineVQ/TrackTarget) - Track on the minimap any friendly you target which is assistable. One that you could used a heal on for instance. Attempts to target player chosen in friend's list or guild roster on click if in the same zone.
+
 
 
 ## Combat/Raiding
@@ -282,6 +304,7 @@
 * [LazyRes](https://github.com/BlackHaste/LazyRes)
 * [LazySpell](https://github.com/laytya/Lazyspell) - Auto select healing ranks?
 * [pitty](https://github.com/Sentilix/pitty) - detect people using quickheal addon
+* [pfUI-lazyres](https://github.com/liiora/pfUI-lazyres) - This addon is an external module for pfUI addon that makes resurrecting the raid after a wipe easy.
 * [QuickHeal](https://github.com/jrc13245/QuickHeal) - QuickHeal automates healing spell selection and targeting for healers.
 * [ResurrectionAnnounce](https://github.com/stokbaek/ResurrectionAnnounce)
 * [SmartHealer](https://github.com/melbaa/SmartHealer) - Autoscales heals in macros (/heal <spell_name>) and click heals for pfUI, Clique and ClassicMouseover.
@@ -354,6 +377,7 @@
 
 ### Warrior
 * [EliteWarriorTTD](https://github.com/jlabranche/EliteWarriorTTD) - Time to death
+* [ES](https://github.com/Smirgeli/ES) - Execute Sound similiar to wotlk
 * [ShaguStance](https://github.com/shagu/ShaguStance) - Automatically switches to the required stance. E.g when trying to charge, while in berserk stance, it will automatically switch.
 * [SP_Overpower](https://github.com/EinBaum/SP_Overpower) - Overpower Alert + Timer 
 * [SP_Revenge](https://github.com/Aggromemnon/SP_Revenge) - alerts you when Revenge is available and shows a countdown timer.
@@ -361,9 +385,6 @@
 * [WarriorCombatManager](https://github.com/Faraso/WarriorCombatManager) - Keep that rage
 * [WarriorHud](https://github.com/mr-rosh/WarriorHUD) - Various alerts
 * [WarriorTank](https://github.com/Cernie/WarriorTank) - 1 button warrior tank
-
-
-
 
 ## Crafting
 * [AdvancedTradeSkillWindow2](https://github.com/Shellyoung/AdvancedTradeSkillWindow2)
@@ -474,6 +495,7 @@
 
 ## Map
 * [Atlas](https://github.com/laytya/Atlas) - Dungeon maps, and loot tables
+* [CMap](https://github.com/turinpt/CMap) - Backport of Sexymap
 * [Forged_MapNotes](https://github.com/nemanuel/Forged_MapNotes) - add notes to the map
 * [Magnify](https://github.com/lookino/Magnify) - Zoom in and out of world map with mouse wheel
 * [MapOfScars](https://github.com/yutsuku/MapOfScars) - Adds skyrim's compass [vid](https://youtu.be/Qtuv0gdHo7k)

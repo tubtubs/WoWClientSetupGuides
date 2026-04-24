@@ -424,5 +424,6 @@ To install just extract to the main folder, will place the files needed in `Data
 
 ## 6. FAQ
 * I don't have a threat meter to recommend. Consult your raid leader, or fellow raiders for a tested, trusted meter.
- * [VanillaHelpers64](https://github.com/paokkerkir/VanillaHelpers64/releases) - Probably unstable, haven't tried it. Could hep reduce memory pressure with HD patches though.
+* [VanillaHelpers64](https://github.com/paokkerkir/VanillaHelpers64/releases) - Probably unstable, haven't tried it. Could hep reduce memory pressure with HD patches though.
+* [GudaIO](https://github.com/vatichild/GudaIO) Still looking into it. Limited used for it's own addons?
 TODO:

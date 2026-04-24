@@ -422,3 +422,4 @@ The few HD patches I've tried, including [Project Reforged](https://projectrefor
 TODO:
 * [pfUI-AddonSkinner](https://github.com/jrc13245/pfUI-addonskinner)
 * [no1600x1200] - Might be replaceable with the multimonitor fix, would be preferable since the source is lost for this one
+* [GudaIO](https://github.com/vatichild/GudaIO) Still looking into it. Limited used for it's own addons?

@@ -3,6 +3,9 @@
 * [SuperAPI](https://github.com/balakethelock/SuperAPI) Mentioned above, it's the accompanying addon for SuperWoW that addons a mini map button to configure it's features.
 * [NampowerSettings](https://gitea.com/avitasia/NampowerSettings) Mentioned above, configures the Nampower mod in game with a menu opened from the minimap button.
 
+# Categories
+## [Featured Addons](#featured-addons)
+
 ## Featured Addons
 * [__Anticrash](https://github.com/me0wg4ming/__Anticrash) - unregisters all frames on logout. idk if this is really necessary, saves nampower apparently
 * [Accountant](https://github.com/The-Kludge-Bureau/Accountant)* [1](https://github.com/wow-vanilla-addons/Accountant)

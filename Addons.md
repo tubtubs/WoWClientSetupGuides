@@ -4,7 +4,37 @@
 * [NampowerSettings](https://gitea.com/avitasia/NampowerSettings) Mentioned above, configures the Nampower mod in game with a menu opened from the minimap button.
 
 # Categories
-## [Featured Addons](#featured-addons)
+* [Featured Addons](#featured-addons)
+* [UI OVERHAULS](#ui-overhauls)
+* [Action Bars](#action-bars)
+* [Aesthetics](#Aesthetics)
+* [Automation](#Automation)
+* [Classes](#Classes)
+* [Crafting](#Crafting)
+* [Combat/Raiding](#Combat/Raiding)
+* [Conveniences](#Conveniences)
+* [Economy](#Economy)
+* [Equipment](#Equipment)
+* [Frames and Plates](#Frames-and-Plates)
+* [GameMaster](#GameMaster)
+* [GamePad/Console Gaming](#GamePad/Console-Gaming)
+* [Gathering/Farming](#Gathering/Farming)
+* [Guides](#Guides)
+* [Inventory](#Inventory)
+* [Mail](#Mail)
+* [Macros](#Macros)
+* [Map](#Map)
+* [Misc. Enhancements](#Misc.-Enhancements)
+* [Music](#Music)
+* [Questing](#Questing)
+* [Roleplay](#Roleplay)
+* [PVP](#PVP)
+* [Silly](#Silly)
+* [Social](#Social)
+* [Tooltips](#Tooltips)
+* [Development Stuff/Libraries](#Development-Stuff/Libraries)
+* [Big addon lists](#Big-addon-lists)
+* [Small addon lists](#Small-addon-lists)
 
 ## Featured Addons
 * [__Anticrash](https://github.com/me0wg4ming/__Anticrash) - unregisters all frames on logout. idk if this is really necessary, saves nampower apparently
@@ -716,12 +746,12 @@
 * [WowLuaVanilla](https://github.com/laytya/WowLuaVanilla) - WowLua is an in-game Lua scripting environment that includes an interactive Lua interpreter as well as a multi-page script editor.
 * [Zorlen](https://github.com/Xian55/Zorlen) - Functions library, turtle wow supported
 
-## Big addon lists:
+## Big addon lists
 * [Everlook](https://forum.everlook.org/t/list-of-github-addons/18)
 * [Github Big Repo of Addons](https://github.com/ericraio/vanilla-wow-addons/)
 * [TurtleWoW](https://turtle-wow.fandom.com/wiki/Addons#Full_Addons_List)
 * [TurtleWoW - SuperWoW Compatible Addons](https://turtle-wow.fandom.com/wiki/Addons#SuperWoW_Addons)
 * [ruRU Addons](https://github.com/WoWruRU-ClassicAddons)
 
-## Small addon lists:
+## Small addon lists
 * [Select_Addons by Road-block](https://github.com/Road-block/Select_AddOns)

@@ -39,7 +39,10 @@
 ## Featured Addons
 * [__Anticrash](https://github.com/me0wg4ming/__Anticrash) - unregisters all frames on logout. idk if this is really necessary, saves nampower apparently
 * [Accountant](https://github.com/The-Kludge-Bureau/Accountant)* [1](https://github.com/wow-vanilla-addons/Accountant)
+* [Ace2](https://github.com/laytya/Ace2) [*](https://github.com/crazypoultry/Wow1.12.1_Addons_Collection/tree/master/Ace2_r17998)
 * [AdvancedTradeSkillWindow2](https://github.com/Shellyoung/AdvancedTradeSkillWindow2)
+* [Aero](https://github.com/gashole/Aero) - Adds animation to frames
+* [Atlas](https://github.com/laytya/Atlas) - Dungeon maps, and loot tables
 * [Attack](https://github.com/shirsig/attack) - Enables /attack command
 * [Aux (auctions)](https://github.com/acid9000/Aux-addon)* [1](https://github.com/shirsig/aux-addon-vanilla)
 * [BagShui](https://github.com/Skillkrote/Bagshui)
@@ -52,13 +55,14 @@
 * [EmoteButtonsV2](https://github.com/tubtubs/EmoteButtons) - Emotes, Macros, Slash commands from an expanding series of buttons
 * [FineZoom](https://github.com/Stormhand81/FineZoom)
 * [Flyout](https://github.com/lookino/Flyout) - Flyout is a legacy World of Warcraft add-on that allows players to create an expandable action button. 
-* [FulllUIToggle](https://github.com/Otari98/FullSack) - Hides names when hiding the interface
+* [FulllUIToggle](https://github.com/spuxx-dev/FullUIToggle) - Hides names when hiding the interface
 * [GentleGC](https://github.com/MarcelineVQ/GentleGC) - Gentle Garbage Collection
 * [HatTrick](https://github.com/vakos1/HatTrick) - Adds checkboxes to the character screen for cloak and helm display toggling
 * [Inspector](https://github.com/doorknob6/Inspector) - Adds a more feature rich inspect window
 * [kUI-Namaplates](https://github.com/laytya/Kui-Namaplates) - Configurable name plates
 * [Lern2Spell](https://github.com/mr-rosh/Lern2Spell) - Upgrades spell ranks on your action bars
 * [MessageBox](https://github.com/tilare/MessageBox) - Better WIM
+* [MinimapTracking](https://github.com/isfir/MinimapTracking) - VanillaHelpers assisted minimap tracking, like in future expansions
 * [MissingCrafts](https://github.com/refaim/MissingCrafts)
 * [ModernMapMarkers-Vanilla](https://github.com/Drakensangs/ModernMapMarkers-Vanilla) - Adds map markers for many common points of interests (dungeons, graveyards, towns, etc)
 * [MorphHelper](https://github.com/tubtubs/MorphHelper) - Window, and slash commands for VanillaHelper's morph commands
@@ -67,15 +71,17 @@
 * [NosCursor](https://github.com/Beardedrasta/NosCursor) - Allows Customizing cursor
 * [Panda](https://github.com/tubtubs/panda) - A simple vanilla wow addon that makes quick work of disenchanting, featuring rich blacklist options and neat animations
 * [PFui](https://github.com/shagu/pfUI)
+* [pfQuest](https://github.com/shagu/pfQuest) - also has great DB for gathering/chests/rares
+* [pfQuest-icons](https://github.com/shagu/pfQuest-icons)
 * [PingoMatic](https://github.com/Road-block/PingoMatic) - Minimap ping on steroids for vanilla
 * [Possessions](https://github.com/refaim/Possessions) - Provides a searchable and filterable list of all items across all your characters on a single account. 
-* [Postal](https://github.com/veechs/Postal-Returned)
+* [Postal](https://github.com/TheoIX/Postal-Returned) [*](https://github.com/veechs/Postal-Returned)
+* [Puppeteer](https://github.com/OldManAlpha/Puppeteer) - SuperWoW/UnitXP_SP3 fueled frames. Like healbot or Vuhdoo
+* [QuickHeal](https://github.com/jrc13245/QuickHeal) - QuickHeal automates healing spell selection and targeting for healers.
 * [Rinse](https://github.com/Otari98/Rinse) - Decursive, but more efficient and supporting client mods 
 * [ShaguDPS](https://github.com/shagu/ShaguDPS)
 * [ShaguKill](https://github.com/shagu/ShaguKill) - Displays the count of remaining kills or other Exp-giving events that are required to gain the next levelup.
 * [SimpleActionSets](https://github.com/pepopo978/SimpleActionSets)[*](https://github.com/0ldi/SimpleActionSets) - Saves action bars?
-* [SoloRaidTargetIcons (Requires SuperWoW)](https://github.com/refaim/SoloRaidTargetIcons)
-* [SP SwingTimer (SuperWoW support)](https://github.com/MarcelineVQ/SP_SwingTimer)
 * [SoloRaidTargetIcons (Requires SuperWoW)](https://github.com/refaim/SoloRaidTargetIcons)
 * [SP SwingTimer (SuperWoW support)](https://github.com/MarcelineVQ/SP_SwingTimer)
 * [SuperCleveRoidMacros](https://github.com/jrc13245/SuperCleveRoidMacros) - Enhanced macro addon for World of Warcraft 1.12.1 (Vanilla/Turtle WoW) with dynamic tooltips, conditional execution, and extended syntax.
@@ -102,7 +108,7 @@
 * [mcgUI](https://github.com/mcguk/McgUI-1.12) - Melee UI
 * [modUI](https://github.com/zirtox1992/modui)
 * [SpartUI](https://github.com/Dyaxler/SpartanUI_Vanilla)
-
+* [Carbonite-Vanilla](https://gitlab.com/knights-of-sunwell/carbonite-vanilla) - Might not be an entirely faithful/complete port
 ## Action Bars
 * [Bartender2](https://github.com/McPewPew/Bartender2-Read-Instructions)
 * [Bongos](https://github.com/jacamo555/Bongos)
@@ -322,6 +328,7 @@
 * [LazySpell](https://github.com/laytya/Lazyspell) - Auto select healing ranks?
 * [pitty](https://github.com/Sentilix/pitty) - detect people using quickheal addon
 * [pfUI-lazyres](https://github.com/liiora/pfUI-lazyres) - This addon is an external module for pfUI addon that makes resurrecting the raid after a wipe easy.
+* [Puppeteer](https://github.com/OldManAlpha/Puppeteer) - SuperWoW/UnitXP_SP3 fueled frames. Like healbot or Vuhdoo
 * [QuickHeal](https://github.com/jrc13245/QuickHeal) - QuickHeal automates healing spell selection and targeting for healers.
 * [ResurrectionAnnounce](https://github.com/stokbaek/ResurrectionAnnounce)
 * [SmartHealer](https://github.com/melbaa/SmartHealer) - Autoscales heals in macros (/heal <spell_name>) and click heals for pfUI, Clique and ClassicMouseover.
@@ -487,7 +494,7 @@
 * [Bagnon](https://github.com/McPewPew/Bagnon)
 * [Guda](https://github.com/vatichild/guda) - Bag and bank management
 * [Lookup](https://github.com/TrangOul/Lookup) - adds a search bar to the default backpack
-* [BagShui](https://github.com/Skillkrote/Bagshui)
+* [BagShui](https://github.com/The-Kludge-Bureau/Bagshui) [*](https://github.com/Skillkrote/Bagshui)
 * [EngInventory](https://github.com/Brqje/EngInventory) - One-bag with item type auto-sort.
 * [EngBags](https://github.com/laytya/EngBags)
 
@@ -502,8 +509,7 @@
 ## Mail
 * [CT_MailMod](https://github.com/Einherjarn/CT_MailMod)
 * [Mail](https://github.com/Thrunk112/Mail)
-* [Postal](https://github.com/veechs/Postal-Returned)
-
+* [Postal](https://github.com/TheoIX/Postal-Returned) [*](https://github.com/veechs/Postal-Returned)
 ## Macros
 * [AntiSpamStopCast](https://github.com/thepparker/AntiSpamStopCast)
 * [Attack](https://github.com/shirsig/attack) - Enables /attack command
@@ -530,6 +536,7 @@
 * [Magnify](https://github.com/lookino/Magnify) - Zoom in and out of world map with mouse wheel
 * [MapOfScars](https://github.com/yutsuku/MapOfScars) - Adds skyrim's compass [vid](https://youtu.be/Qtuv0gdHo7k)
 * [Metamap-vanilla](https://github.com/laytya/Metamap-vanilla)
+* [MinimapTracking](https://github.com/isfir/MinimapTracking) - VanillaHelpers assisted minimap tracking, like in future expansions
 * [ModernMapMarkers-Vanilla](https://github.com/Drakensangs/ModernMapMarkers-Vanilla) - Adds map markers for many common points of interests (dungeons, graveyards, towns, etc)
 * [PingoMatic](https://github.com/Road-block/PingoMatic) - Minimap ping on steroids for vanilla
 * [SimpleMinimap](https://github.com/McPewPew/SimpleMinimap)
@@ -548,7 +555,7 @@
 * [DisableEscape](https://github.com/EinBaum/DisableEscape) - Prevents escape from closing summons, and invites
 * [EquipColor](https://github.com/TrangOul/EquipColor) - colors unusable items red in the inventory and the bank. It also colors known recipes green in the inventory and the bank.
 * [FineZoom](https://github.com/Stormhand81/FineZoom)
-* [FulllUIToggle](https://github.com/Otari98/FullSack) - Hides names when hiding the interface
+* [FulllUIToggle](https://github.com/spuxx-dev/FullUIToggle) - Hides names when hiding the interface
 * [GentleGC](https://github.com/MarcelineVQ/GentleGC) - Gentle Garbage Collection
 * [KeyRingOpener](https://github.com/EinBaum/KeyringOpener) - Opens keyring automatically when opening all bags
 * [LagCast](https://github.com/Johnmichael/LagCast) - Supposed to help casters with latency
@@ -587,6 +594,7 @@
 * [WoWAi Voice Over](https://github.com/mrthinger/wow-voiceover/releases/download/v1.4.3/AI_VoiceOver-WoW_1.12-v1.4.3.zip)[SoundPack](https://github.com/mrthinger/wow-voiceover/releases/download/v1.3.1/AI_VoiceOverData_Vanilla-v1.0.0.zip) - Voice overs for dialogue and quests. Must be installed manually
 
 ## Roleplay
+* [MorphHelper](https://github.com/tubtubs/MorphHelper) - Window, and slash commands for VanillaHelper's morph commands
 * [MyRolePlay (MRP)](https://github.com/crazypoultry/Wow1.12.1_Addons_Collection/tree/master/MyRolePlay_v2.2.2)
 * [RoleplayingHelper-1.12](https://github.com/XalZul/RoleplayingHelper-1.12)
 * [TurtleRolePlayingHelper](https://github.com/vaaslite/TurtleRoleplayingHelper)
@@ -737,10 +745,12 @@
 * [LibCrafts-1.0](https://github.com/refaim/LibCrafts-1.0)
 * [libdatabroker-1-1](https://github.com/tekkub/libdatabroker-1-1)
 * [LibStub](https://github.com/zerosnake0/LibStub)
+* [NamPowerDB](https://github.com/The-Kludge-Bureau/nampowerDB) - A reusable library for crash-persistent storage via nampower's file API. Any addon can use it by calling NampowerDB_Register() at load time.
 * [pfStudio](https://github.com/shagu/pfStudio)
 * [pfDebug](https://github.com/shagu/pfDebug)
 * [PizzaSauce](https://codeberg.org/Pizzahawaii/PizzaSauce) - New animations library, has examples
 * [Sol](https://github.com/martinjlowm/Sol) - Reimplementations of modern Lua functions
+* [TurtleDebug](https://github.com/FrancisEgan/TurtleDebug) - A pretty-print debug tool for Turtle WoW that allows easy copying and saves your variable list
 * [VanillaMaps](https://github.com/0ldi/VanillaMaps) - Quality maps for various zones
 * [Vanilla-WoW-Lua-Definitions](https://github.com/refaim/Vanilla-WoW-Lua-Definitions)
 * [WowLuaVanilla](https://github.com/laytya/WowLuaVanilla) - WowLua is an in-game Lua scripting environment that includes an interactive Lua interpreter as well as a multi-page script editor.

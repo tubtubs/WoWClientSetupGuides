@@ -145,7 +145,7 @@ Also has an [addon](https://gitea.com/avitasia/PerfBoostSettings) to configure t
 Allows you to bind a key which you can then use to interact with the world around you. Can pick herbs, mine, or loot, skin, and talk to NPCs without using the mouse to target. Will be particularly helpful for people playing on steam decks, or gamepads.
 Extract the entire zip to the same folder as your `wow.exe`, including the interface folder. You should enable this addon in game, and add the dll to the `dlls.txt`, which is coming up.
 
-### 3-H [WeirdUtils](https://codeberg.org/MarcelineVQ/WeirdUtils)
+### 3-H. [WeirdUtils](https://codeberg.org/MarcelineVQ/WeirdUtils)
 There are lots of dlls to pick from, any that you decide to use must be added to `dlls.txt` in the next step. `weirdutils.dll/weirdutils_noperf.dll` includes all of them, but there are some that should be skipped so I recommend picking and choosing individual dlls.
 Recommended:
 * `healtextfix.dll` - Fixes the bug in SuperWoW that shows hex values in healing floating combat text
@@ -167,19 +167,19 @@ Skip:
 - `transmogfix.dll` - not useful here
 - `weirdutils.dll/weirdutils_noperf.dll` - I suggest picking and choosing others, these include all/most of the other's features
 
-### [ClassicAPI](https://github.com/brues-code/ClassicAPI)
+### 3-HH. [ClassicAPI](https://github.com/brues-code/ClassicAPI)
 Back ported lua functions from retail mostly. Might be turtle wos specific, needs testing
 
-### [GudaIO](https://github.com/vatichild/GudaIO)
+### 3-HHH. [GudaIO](https://github.com/vatichild/GudaIO)
 Might be turtle wow exclusive, needs testing. Allows sharing info between accounts, and some other UI tweaks 
 Has some companion addons to take advantage of it
 https://github.com/vatichild/GudaPlates
 https://github.com/vatichild/Guda
 
-### [Reliquary](https://github.com/The-Kludge-Bureau/Reliquary)
+### 3-HHHH. [Reliquary](https://github.com/The-Kludge-Bureau/Reliquary)
 DBC lookup LUA libraries, seems to work fine in 1.12.1
 
-### [HearthDB](https://github.com/The-Kludge-Bureau/HearthDB)
+### 3-HHHHH. [HearthDB](https://github.com/The-Kludge-Bureau/HearthDB)
 SQLite database lookups from lua, untested
 
 ### 3-I. [VanillaFixes](https://github.com/hannesmann/vanillafixes/releases)

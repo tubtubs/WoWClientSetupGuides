@@ -115,9 +115,9 @@ You need to enable the Vertex Animation Shaders option in video options, the cli
 ## 3. CLIENT MODS
 Make sure you check the [2-E. Data Execution Prevention](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#2-e-doesnt-launchquickly-flashes-on-screen----data-execution-prevention) section above to verify you have a Data Execution Prevention exception in place for these client mods.
 
-### 3-A. [NamPower](https://gitea.com/avitasia/nampower/releases)
+### 3-A. [NamPower](https://gitea.com/tubtubs/Nampower/releases)
 This mod is highly configurable, easing woes for casters with latency adding support for spell batching. Just extract the DLL into the same folder as your wow.exe
-Also has an [addon](https://gitea.com/avitasia/NampowerSettings) to configure this mod in game with a menu opened from the minimap button. The addon allows visual indication of spell batching, with a movable icon (disabled by default). This can be installed manually (extract to `Interface/Addons` and rename the folder to `NampowerSettings`), or automatically using the git addon manager. More information in[4. ADDONS](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#4-addons-1) section below.
+Also has an [addon](https://github.com/Dusk-92/nampowersettings) to configure this mod in game with a menu opened from the minimap button. The addon allows visual indication of spell batching, with a movable icon (disabled by default). This can be installed manually (extract to `Interface/Addons` and rename the folder to `NampowerSettings`), or automatically using the git addon manager. More information in[4. ADDONS](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#4-addons-1) section below.
 
 ### 3-B. [SuperWoW](https://github.com/balakethelock/SuperWoW/releases)
 This mod does a lot. It adds sparkles on herbs/mines/chests. With the [addon](https://github.com/balakethelock/SuperAPI), it has a built in settings menu in the minimap button to change autoloot, FOV, noise in background, click through corpses and more. It also provides extra functionality to [supported addons](https://turtle-wow.fandom.com/wiki/Addons#SuperWoW_Addons).
@@ -166,6 +166,21 @@ Optional:
 Skip: 
 - `transmogfix.dll` - not useful here
 - `weirdutils.dll/weirdutils_noperf.dll` - I suggest picking and choosing others, these include all/most of the other's features
+
+### [ClassicAPI](https://github.com/brues-code/ClassicAPI)
+Back ported lua functions from retail mostly. Might be turtle wos specific, needs testing
+
+### [GudaIO](https://github.com/vatichild/GudaIO)
+Might be turtle wow exclusive, needs testing. Allows sharing info between accounts, and some other UI tweaks 
+Has some companion addons to take advantage of it
+https://github.com/vatichild/GudaPlates
+https://github.com/vatichild/Guda
+
+### [Reliquary](https://github.com/The-Kludge-Bureau/Reliquary)
+DBC lookup LUA libraries, seems to work fine in 1.12.1
+
+### [HearthDB](https://github.com/The-Kludge-Bureau/HearthDB)
+SQLite database lookups from lua, untested
 
 ### 3-I. [VanillaFixes](https://github.com/hannesmann/vanillafixes/releases)
 This is the launcher that will load the dlls on run time. Extract the zip into your WoW folder.
@@ -223,7 +238,7 @@ If you're running into issues with addons, feel free to reach out in the #💾-a
 Moved big addon list [here](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Addons.md)
 * [PerfBoostSettings](https://gitea.com/avitasia/PerfBoostSettings) - Accompanying addon for PerfBoost, has many options for when and what to hide/cull from rendering (players, units, corpses, spell effects).
 * [SuperAPI](https://github.com/balakethelock/SuperAPI) Mentioned above, it's the accompanying addon for SuperWoW that addons a mini map button to configure it's features.
-* [NampowerSettings](https://gitea.com/avitasia/NampowerSettings) Mentioned above, configures the Nampower mod in game with a menu opened from the minimap button.
+* [NampowerSettings](https://github.com/Dusk-92/nampowersettings) Mentioned above, configures the Nampower mod in game with a menu opened from the minimap button.
 
 *UI OVERHAULS*
 * [WC3 UI](https://github.com/Fiurs-Hearth/WIIIUI)

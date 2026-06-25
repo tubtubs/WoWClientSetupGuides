@@ -114,9 +114,9 @@ You need to enable the Vertex Animation Shaders option in video options, the cli
 ## 3. CLIENT MODS
 Make sure you check the [Section 2-E](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Wallcraft%20Client%20Guide.md#2-e-doesnt-launchquickly-flashes-on-screen----data-execution-prevention) above to verify you have a Data Execution Prevention exception in place for these client mods.
 
-### 3-A. [NamPower](https://gitea.com/avitasia/nampower/releases)
+### 3-A. [NamPower](https://gitea.com/tubtubs/Nampower/releases)
 This mod is highly configurable, easing woes for casters with latency adding support for spell batching. Just extract the DLL into the same folder as your wow.exe
-Also has an [addon](https://gitea.com/avitasia/NampowerSettings) to configure this mod in game with a menu opened from the minimap button. The addon allows visual indication of spell batching, with a movable icon (disabled by default). This  can be installed manually (extract to `Interface/Addons` and rename the folder to `NampowerSettings`), or automatically using the git addon manager. More information in [4. ADDONS](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Wallcraft%20Client%20Guide.md#4-addons) section below.
+Also has an [addon](https://github.com/Dusk-92/nampowersettings) to configure this mod in game with a menu opened from the minimap button. The addon allows visual indication of spell batching, with a movable icon (disabled by default). This  can be installed manually (extract to `Interface/Addons` and rename the folder to `NampowerSettings`), or automatically using the git addon manager. More information in [4. ADDONS](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Wallcraft%20Client%20Guide.md#4-addons) section below.
 
 ### 3-B. [SuperWoW](https://github.com/balakethelock/SuperWoW/releases)
 This mod does a lot. It adds sparkles on herbs/mines/chests. With the [addon](https://github.com/balakethelock/SuperAPI), it has a built in settings menu in the minimap button to change autoloot, FOV, noise in background, click through corpses and more. It also provides extra functionality to [supported addons](https://turtle-wow.fandom.com/wiki/Addons#SuperWoW_Addons).
@@ -218,7 +218,7 @@ When configuring addons in game be sure to logout once you've made changes to en
 Moved big addon list [here](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Addons.md)
 * [PerfBoostSettings](https://gitea.com/avitasia/PerfBoostSettings) - Accompanying addon for PerfBoost, has many options for when and what to hide/cull from rendering (players, units, corpses, spell effects).
 * [SuperAPI](https://github.com/balakethelock/SuperAPI) Mentioned above, it's the accompanying addon for SuperWoW that addons a mini map button to configure it's features.
-* [NampowerSettings](https://gitea.com/avitasia/NampowerSettings) Mentioned above, configures the Nampower mod in game with a menu opened from the minimap button.
+* [NampowerSettings](https://github.com/Dusk-92/nampowersettings) Mentioned above, configures the Nampower mod in game with a menu opened from the minimap button.
 
 *UI OVERHAULS*
 * [WC3 UI](https://github.com/Fiurs-Hearth/WIIIUI)

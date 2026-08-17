@@ -21,6 +21,10 @@ If you have any questions, concerns, or other feedback please let me know.
 * PerfBoost
 * Interact
 * WeirdUtils
+* ClassicAPI
+* GudaIO
+* Reliquary
+* HearthDB
 * VanillaFixes
 * DVXK
 * Vanilla MultiMonitor Fix
@@ -114,9 +118,12 @@ You need to enable the Vertex Animation Shaders option in video options, the cli
 ## 3. CLIENT MODS
 Make sure you check the [Section 2-E](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Wallcraft%20Client%20Guide.md#2-e-doesnt-launchquickly-flashes-on-screen----data-execution-prevention) above to verify you have a Data Execution Prevention exception in place for these client mods.
 
-### 3-A. [NamPower](https://gitea.com/tubtubs/Nampower/releases)
+I've linked to the original repos for these client mods where possible. Some of these mods now link to alternate mirrors.
+If any of the links to these client mods don't work be sure to check my [Vanilla WoW Client Mod Archive](https://github.com/tubtubs/VanillaWoWClientModBackup) for a mirror.
+
+### 3-A. [NamPower](https://github.com/brues-code/nampower)
 This mod is highly configurable, easing woes for casters with latency adding support for spell batching. Just extract the DLL into the same folder as your wow.exe
-Also has an [addon](https://github.com/Dusk-92/nampowersettings) to configure this mod in game with a menu opened from the minimap button. The addon allows visual indication of spell batching, with a movable icon (disabled by default). This  can be installed manually (extract to `Interface/Addons` and rename the folder to `NampowerSettings`), or automatically using the git addon manager. More information in [4. ADDONS](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Wallcraft%20Client%20Guide.md#4-addons) section below.
+Also has an [addon](https://github.com/brues-code/NampowerSettings) to configure this mod in game with a menu opened from the minimap button. The addon allows visual indication of spell batching, with a movable icon (disabled by default). This  can be installed manually (extract to `Interface/Addons` and rename the folder to `NampowerSettings`), or automatically using the git addon manager. More information in [4. ADDONS](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Wallcraft%20Client%20Guide.md#4-addons) section below.
 
 ### 3-B. [SuperWoW](https://github.com/balakethelock/SuperWoW/releases)
 This mod does a lot. It adds sparkles on herbs/mines/chests. With the [addon](https://github.com/balakethelock/SuperAPI), it has a built in settings menu in the minimap button to change autoloot, FOV, noise in background, click through corpses and more. It also provides extra functionality to [supported addons](https://turtle-wow.fandom.com/wiki/Addons#SuperWoW_Addons).
@@ -132,13 +139,12 @@ Simply extract the folder into your wow directory, and click and drag the WoW.ex
 This client mod is very fresh, I don't have as much experience with it. It offers some improvements to name plate clipping, combat text rendering, and offers a means to disable weather effects as well as some other features. It adds some new keybinds, and lua calls that can line of sight check, distance check, behind check, and some tab targetting replacements that loop properly. Read more about all the functionality [here](https://codeberg.org/konaka/UnitXP_SP3/wiki)
 Extract the DLL into the Wallcraft folder. You will also need to install the accompanying addon so that it can be configured in game from the minimap button. Extract the `UnitXP_SP3_Addon` folder to the `Interface/Addons` folder.
 
-### 3-E. [VanillaHelpers](https://github.com/isfir/VanillaHelpers/releases)
+### 3-E. [VanillaHelpers](https://github.com/tubtubs/VanillaWoWClientModBackup/raw/refs/heads/main/ClientMods/perf_boost/perf_boost.dll)
 Also very fresh. Makes some improvements to loading assets (useful for HD patches), screenshots saved as jpegs, allocating memory and adds lua functions for morphing/swapping display IDs and more. Check the [usage](https://github.com/isfir/VanillaHelpers?tab=readme-ov-file#usage) details for the lua here. Some addons take advantage of this mod's extended lua calls. For example, [MorphHelper](https://github.com/tubtubs/MorphHelper) adds a window and some slash commands for morphing.
 Download the `VanillaHelpers.dll` and place it in the Wallcraft folder. This will need to be loaded by VanillaFixes, which is covered next.
 
-### 3-F. [PerfBoost](https://gitea.com/avitasia/perf_boost)
-This mod has many options and keybind toggles for when and what to hide/cull from rendering (players, units, corpses, spell effects). Just extract the DLL into the same folder as your wow.exe.
-Also has an [addon](https://gitea.com/avitasia/PerfBoostSettings) to configure this mod in game with a menu opened from the minimap button. This  can be installed manually (extract to `Interface/Addons` and rename the folder to `PerfBoostSettings`), or automatically using the git addon manager. More information in [4. ADDONS](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Wallcraft%20Client%20Guide.md#4-addons) section below.
+### 3-F. [PerfBoost (Mirror)](https://github.com/tubtubs/VanillaWoWClientModBackup/tree/main/ClientMods/perf_boost) [Original Repo (dead)](https://gitea.com/avitasia/perf_boost) DeadlinkThis mod has many options and keybind toggles for when and what to hide/cull from rendering (players, units, corpses, spell effects). Just extract the DLL into the same folder as your wow.exe.
+Also has an [addon](https://github.com/tubtubs/VanillaWoWClientModBackup/raw/refs/heads/main/ClientMods/perf_boost/perf_boost%20addon.zip) to configure this mod in game with a menu opened from the minimap button. This  can be installed manually (extract to `Interface/Addons` and rename the folder to `PerfBoostSettings`), or automatically using the git addon manager. More information in [4. ADDONS](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Wallcraft%20Client%20Guide.md#4-addons) section below.
 
 ### 3-G. [Interact](https://github.com/luskanek/Interact)
 Allows you to bind a key which you can then use to interact with the world around you. Can pick herbs, mine, or loot, skin, and talk to NPCs without using the mouse to target. Will be particularly helpful for people playing on steam decks, or gamepads.
@@ -147,53 +153,71 @@ Extract the entire zip to the same folder as your `wow.exe`, including the inter
 ### 3-H [WeirdUtils](https://codeberg.org/MarcelineVQ/WeirdUtils)
 There are lots of dlls to pick from, any that you decide to use must be added to `dlls.txt` in the next step. `weirdutils.dll/weirdutils_noperf.dll` includes all of them, but there are some that should be skipped so I recommend picking and choosing individual dlls.
 Recommended:
-* `healtextfix.dll` - Fixes the bug in SuperWoW that shows hex values in healing floating combat text
-* `minimapicons.dll` - Adds TBC/Wotlk style minimap tracking for NPCs. Gathering and hunter tracking supported. Adds an addon into the list, can be enabled/disabled.
-* `pngscreenshots.dll` - Saves screenshots as PNG without frame drop. Controlled via `screenshotQuality` CVAR
-* `/script SetCVar("screenshotQuality", "6")` -- set compression level (1 = fast, 9 = smallest, default 6)
-* `/script SetCVar("screenshotQuality", "0")` -- disable PNG, use original TGA format
+* ~~`healtextfix.dll` - Fixes the bug in SuperWoW that shows hex values in healing floating combat text ~~ SuperWoW updates should address this now
+* ~~`minimapicons.dll` - Adds TBC/Wotlk style minimap tracking for NPCs. Gathering and hunter tracking supported. Adds an addon into the list, can be enabled/disabled.~~ VanillaHelpers external addon seems to work better imo
+* `pngscreenshots.dll` - Saves screenshots as PNG without frame drop. Controlled via `screenshotQuality` CVAR. Probably covered by another client mod though.
+    * `/script SetCVar("screenshotQuality", "6")` -- set compression level (1 = fast, 9 = smallest, default 6)
+    * `/script SetCVar("screenshotQuality", "0")` -- disable PNG, use original TGA format
 * `weirdperformance.dll` - Includes many interface, and math based performance boosts
 * `worldmarkers.dll` - Adds lua functions for placing cataclysm style world raid markers. 
-* Commands are: `/worldmarker 1` or `/wm 1`, `/wm 5 target` where target can be other unittokens like player/mouseover. `/clearworldmarker` to remove all, or `/cwm 1` to remove a specific one.
+    * Commands are: `/worldmarker 1` or `/wm 1`, `/wm 5 target` where target can be other unittokens like player/mouseover. `/clearworldmarker` to remove all, or `/cwm 1` to remove a specific one.
 
 Optional:
 * `bigcursor.dll` - Very nice for users with large monitors. DVXK can increase cursor size too
 * `clickthrough.dll` - SuperWoW already includes this functionality, though this implementation is  smarter though and doesn't require disabling to target corpses. Seems to target objects through NPCs though, rather odd.
-* `customassets.dll` - Allows loading loose assets, and oddly named patches from Data folder. Eg: `patch-12.mpq` or `patch-lewd.mpq`, `Data/Character/Troll/Female/TrollFemale.m2`
+* `customassets.dll` - Allows loading loose assets, and oddly named patches from Data folder. Eg: `patch-12.mpq` or `patch-lewd.mpq`, `Data/Character/Troll/Female/TrollFemale.m2` Not totally necessary, but could be convenient.
 * `logsessions.dll` - Could be useful for parsers. See readme for more info
 
 Skip: 
 - `transmogfix.dll` - not useful here
 - `weirdutils.dll/weirdutils_noperf.dll` - I suggest picking and choosing others, these include all/most of the other's features
 
-### 3-I. [VanillaFixes](https://github.com/hannesmann/vanillafixes/releases)
+### 3-I. [ClassicAPI](https://github.com/brues-code/ClassicAPI)
+Would recommend if you have any addons in mind that require it. There's a pfUI fork going around on octowow that uses it for example.
+Back ported lua functions from retail mostly. Very fresh though, updated very often.
+Some features may be useful here, lots of untouched functionality if you're an addon dev it may be inspiring.
+
+### 3-J. [GudaIO](https://github.com/vatichild/GudaIO)
+Might be turtle wow exclusive, needs testing. Allows sharing info between accounts, and some other UI tweaks.
+Has some companion addons to take advantage of it
+* [GudaPlates](https://github.com/vatichild/)
+* [Guda](https://github.com/vatichild/Guda)
+
+### 3-K. [Reliquary](https://github.com/The-Kludge-Bureau/Reliquary)
+Would recommend if you have any addons in mind that require it.
+DBC lookup LUA libraries, seems to work fine in 1.12.1. Doesn't support all DBC though, a replacement may be around the corner.
+Spell DBCs, and Item, Map info and other DBC info may be retrievable from other mods like Nampower or ClassicAPI though.
+
+### 3-L. [HearthDB](https://github.com/The-Kludge-Bureau/HearthDB)
+SQLite database lookups from lua, untested. Could be useful for managing larger data sets outside of the lua environment.
+No known addons use this mod though.
+
+### 3-M. [VanillaFixes](https://github.com/hannesmann/vanillafixes/releases)
 This is the launcher that will load the dlls on rum time. Extract the zip into your WoW folder.
 In the wow folder you should now have a `dlls.txt`, open it and add the following lines to the bottom, for UnitSP_XP3 and VanillaHelpers, PerfBoost, and Interact support. The rest of the DLLs should be listed in there already.
 ```
 # should be more DLLs listed above
 # Add your own DLLs below
-UnitXP_SP3.dll
+ClassicAPI.dll
+Interact.dll
 VanillaHelpers.dll
 perf_boost.dll
-Interact.dll
-clickthrough.dll
-customassets.dll
-healtextfix.dll
-minimapicons.dll
-pngscreenshots.dll
+Reliquary.dll
+UnitXP_SP3.dll
 weirdperformance.dll
 worldmarkers.dll
+customassets.dll
 ```
 Next, make a shortcut to VanillaFixes.exe. 
 First, right click on VanillaFixes.exe and click `Create Shortcut`. Right click on the new shortcut, and click properties. Add `WoW_Tweaked.exe` after the quotes to the `Target` field. Click Apply, and Okay. Example: [(screenshot)](https://imgur.com/a/vanillafixes-shortcut-auWrnQq)
 You can use this [icon](https://www.wallcraft.org/favicon.ico) for a Wallcraft icon. Click `Change Icon` in the properties window, then click browse  and navigate to the icon. Click Apply, then Okay. Feel free to click and drag the shortcut to your task bar, desktop, or whatever.
 
-### 3-J. [DXVK](https://github.com/doitsujin/dxvk/releases)
+### 3-N. [DXVK](https://github.com/doitsujin/dxvk/releases)
 DVXK is most useful for linux, and AMD graphics users. It can improve graphical performance by converting DirectX 9 calls to Vulkan. 
 There's a release of [VanillaFixes](https://github.com/hannesmann/vanillafixes/releases) that includes DVXK, or a more update to date version can be downloaded from the [github repository](https://github.com/doitsujin/dxvk/releases).
 Simply extract, and copy the 32bit d3d9.dll and dxgi.dll to your game folder, where WoW.exe may be found.
 
-### 3-K. [Vanilla MultiMonitor Fix](https://github.com/Mates1500/VanillaMultiMonitorFix/releases)
+### 3-O. [Vanilla MultiMonitor Fix](https://github.com/Mates1500/VanillaMultiMonitorFix/releases)
 I haven't used this myself, but it fixes some issues that come with having multiple monitors of various resolutions. I have multiple monitors of the same resolution/frequency and never ran into issues.
 To install, extract the zip. You'll need to set `VMMFix_preferred_monitor.txt's` contents to your desired WoW monitor's index, as shown by running ShowAllDisplayDevices.exe. 
 It's automatically setup to be loaded by VanillaFixes, so you should immediately be good to go after modifying that txt.
@@ -216,9 +240,9 @@ When configuring addons in game be sure to logout once you've made changes to en
 
 ### 4-D. Recommended Addons
 Moved big addon list [here](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Addons.md)
-* [PerfBoostSettings](https://gitea.com/avitasia/PerfBoostSettings) - Accompanying addon for PerfBoost, has many options for when and what to hide/cull from rendering (players, units, corpses, spell effects).
+* [PerfBoostSettings](https://github.com/tubtubs/VanillaWoWClientModBackup/raw/refs/heads/main/ClientMods/perf_boost/perf_boost%20addon.zip) - Accompanying addon for PerfBoost, has many options for when and what to hide/cull from rendering (players, units, corpses, spell effects).
 * [SuperAPI](https://github.com/balakethelock/SuperAPI) Mentioned above, it's the accompanying addon for SuperWoW that addons a mini map button to configure it's features.
-* [NampowerSettings](https://github.com/Dusk-92/nampowersettings) Mentioned above, configures the Nampower mod in game with a menu opened from the minimap button.
+* [NampowerSettings](https://github.com/brues-code/NampowerSettings) Mentioned above, configures the Nampower mod in game with a menu opened from the minimap button.
 
 *UI OVERHAULS*
 * [WC3 UI](https://github.com/Fiurs-Hearth/WIIIUI)

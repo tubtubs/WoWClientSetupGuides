@@ -1,4 +1,5 @@
 # Tub's Client Guides
+I seek to install the most cutting edge client mods, addons, patches and any other optimizations or customizations to the Vanilla, 1.12.1 WoW client.
 * [AshenWoW Giga Chad Client Guide](https://github.com/tubtubs/WoWClientSetupGuides/blob/staged/Ashen%20Client%20Guide.md)
     * Should work for any standard vanilla server
 * [Wallcraft Giga Chad Client Guide](https://github.com/tubtubs/WoWClientSetupGuides/blob/staged/Wallcraft%20Client%20Guide.md)

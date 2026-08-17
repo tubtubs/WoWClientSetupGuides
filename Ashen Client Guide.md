@@ -155,7 +155,7 @@ Extract the entire zip to the same folder as your `wow.exe`, including the inter
 ### 3-H [WeirdUtils](https://codeberg.org/MarcelineVQ/WeirdUtils)
 There are lots of dlls to pick from, any that you decide to use must be added to `dlls.txt` in the next step. `weirdutils.dll/weirdutils_noperf.dll` includes all of them, but there are some that should be skipped so I recommend picking and choosing individual dlls.
 Recommended:
-* ~~`healtextfix.dll` - Fixes the bug in SuperWoW that shows hex values in healing floating combat text ~~ SuperWoW updates should address this now
+* ~~`healtextfix.dll` - Fixes the bug in SuperWoW that shows hex values in healing floating combat text~~ SuperWoW updates should address this now
 * ~~`minimapicons.dll` - Adds TBC/Wotlk style minimap tracking for NPCs. Gathering and hunter tracking supported. Adds an addon into the list, can be enabled/disabled.~~ VanillaHelpers external addon seems to work better imo
 * `pngscreenshots.dll` - Saves screenshots as PNG without frame drop. Controlled via `screenshotQuality` CVAR. Probably covered by another client mod though.
     * `/script SetCVar("screenshotQuality", "6")` -- set compression level (1 = fast, 9 = smallest, default 6)

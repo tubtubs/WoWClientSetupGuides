@@ -1,7 +1,7 @@
 # 4-D. Recommended Addons
-* [PerfBoostSettings](https://gitea.com/avitasia/PerfBoostSettings) - Accompanying addon for PerfBoost, has many options for when and what to hide/cull from rendering (players, units, corpses, spell effects).
+* [PerfBoostSettings](https://github.com/tubtubs/VanillaWoWClientModBackup/raw/refs/heads/main/ClientMods/perf_boost/perf_boost%20addon.zip) - Accompanying addon for PerfBoost, has many options for when and what to hide/cull from rendering (players, units, corpses, spell effects).
 * [SuperAPI](https://github.com/balakethelock/SuperAPI) Mentioned above, it's the accompanying addon for SuperWoW that addons a mini map button to configure it's features.
-* [NampowerSettings](https://gitea.com/avitasia/NampowerSettings) Mentioned above, configures the Nampower mod in game with a menu opened from the minimap button.
+* [NampowerSettings](https://github.com/brues-code/NampowerSettings) Mentioned above, configures the Nampower mod in game with a menu opened from the minimap button.
 
 # Categories
 * [Featured Addons](#featured-addons)

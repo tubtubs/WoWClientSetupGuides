@@ -1,5 +1,3 @@
-# Add minimap tracking to main guides
-https://github.com/isfir/MinimapTracking
 # Investigate issue with crash relating to changing Scrolling combat settings.
 - Haven't been able to reproduce it, might be an addon incompatability?
 > your game files are corrupted blah blah blah delete Interface/FrameXML

@@ -736,6 +736,8 @@
 * [AnimationGroup](https://github.com/martinjlowm/AnimationGroup)
 * [BugSack](https://github.com/McPewPew/BugSack)
 * [CallbackHandler-1.0](https://github.com/zerosnake0/CallbackHandler-1.0)
+* [DebugTools](https://github.com/brues-code/ClassicAPI/tree/master/AddOns/DebugTools) Included with ClassicAPI\
+* [DevTools](https://web.archive.org/web/20060507052901/http://www.vigilance-committee.org:80/wow/downloads/DevTools-1.0pre2-11000.zip) - Includes some utilities, like fstack
 * [KethoDoc](https://github.com/refaim/KethoDoc) - Dumps WoW Lua api
 * [LibCandyBar](https://github.com/zerosnake0/CallbackHandler-1.0) - timers library
 * [GetSpellInfoVanilla](https://github.com/Schaka/GetSpellInfoVanilla)

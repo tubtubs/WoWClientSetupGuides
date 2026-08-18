@@ -140,7 +140,7 @@ Simply extract the folder into your wow directory, and click and drag the WoW.ex
 This client mod is very fresh, I don't have as much experience with it. It offers some improvements to name plate clipping, combat text rendering, and offers a means to disable weather effects as well as some other features. It adds some new keybinds, and lua calls that can line of sight check, distance check, behind check, and some tab targetting replacements that loop properly. Read more about all the functionality [here](https://codeberg.org/konaka/UnitXP_SP3/wiki)
 Extract the DLL into the Wallcraft folder. You will also need to install the accompanying addon so that it can be configured in game from the minimap button. Extract the `UnitXP_SP3_Addon` folder to the `Interface/Addons` folder.
 
-### 3-E. [VanillaHelpers](https://github.com/tubtubs/VanillaWoWClientModBackup/raw/refs/heads/main/ClientMods/perf_boost/perf_boost.dll)
+### 3-E. [VanillaHelpers](https://github.com/isfir/VanillaHelpers)
 Also very fresh. Makes some improvements to loading assets (useful for HD patches), screenshots saved as jpegs, allocating memory and adds lua functions for morphing/swapping display IDs and more. Check the [usage](https://github.com/isfir/VanillaHelpers?tab=readme-ov-file#usage) details for the lua here. Some addons take advantage of this mod's extended lua calls. For example, [MorphHelper](https://github.com/tubtubs/MorphHelper) adds a window and some slash commands for morphing.
 Download the `VanillaHelpers.dll` and place it in the WoW folder. This will need to be loaded by VanillaFixes, which is covered next.
 

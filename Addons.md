@@ -45,7 +45,7 @@
 * [Atlas](https://github.com/laytya/Atlas) - Dungeon maps, and loot tables
 * [Attack](https://github.com/shirsig/attack) - Enables /attack command
 * [Aux (auctions)](https://github.com/acid9000/Aux-addon)* [1](https://github.com/shirsig/aux-addon-vanilla)
-* [BagShui](https://github.com/Skillkrote/Bagshui)
+* [BagShui](https://github.com/absir/Bagshui) [1](https://github.com/Skillkrote/Bagshui)
 * [BetterAlign](https://github.com/DennisWG/BetterAlign) - A better version of Align for Vanilla WoW that adds draggable, mirrored helper bars as well as a tidy little GUI on top of the original Addon.
 * [BetterHelp](https://github.com/neolectron/BetterHelp) - `/help` now shows slash commands from ALL installed addons. Also can do `/sl` for slashcommand list.
 * [CloseUp](https://github.com/Road-block/CloseUp) -  CharacterModel and DressingRoom Improvements (1.12) 
@@ -73,7 +73,7 @@
 * [PFui](https://github.com/shagu/pfUI)
 * [pfQuest](https://github.com/shagu/pfQuest) - also has great DB for gathering/chests/rares
 * [pfQuest-icons](https://github.com/shagu/pfQuest-icons)
-* [PingoMatic](https://github.com/Road-block/PingoMatic) - Minimap ping on steroids for vanilla
+* [PingoMatic](https://github.com/Road-block/PingoMatic) - Minimap ping on steroids for vanilla. Shows an arrow where the ping is directed.. Shows an arrow where the ping is directed.
 * [Possessions](https://github.com/refaim/Possessions) - Provides a searchable and filterable list of all items across all your characters on a single account. 
 * [Postal](https://github.com/TheoIX/Postal-Returned) [*](https://github.com/veechs/Postal-Returned)
 * [Puppeteer](https://github.com/OldManAlpha/Puppeteer) - SuperWoW/UnitXP_SP3 fueled frames. Like healbot or Vuhdoo
@@ -539,7 +539,7 @@
 * [Metamap-vanilla](https://github.com/laytya/Metamap-vanilla)
 * [MinimapTracking](https://github.com/isfir/MinimapTracking) - VanillaHelpers assisted minimap tracking, like in future expansions
 * [ModernMapMarkers-Vanilla](https://github.com/Drakensangs/ModernMapMarkers-Vanilla) - Adds map markers for many common points of interests (dungeons, graveyards, towns, etc)
-* [PingoMatic](https://github.com/Road-block/PingoMatic) - Minimap ping on steroids for vanilla
+* [PingoMatic](https://github.com/Road-block/PingoMatic) - Minimap ping on steroids for vanilla. Shows an arrow where the ping is directed.
 * [SimpleMinimap](https://github.com/McPewPew/SimpleMinimap)
 * [sQMinimapFix](https://github.com/Montspy/sQMinimapFix) - force a constant minimap zoom level across all zones, cities and instances. No configuration needed. Set your favorite zoom level, forget it.
 * [Yatlas](https://github.com/Rumchiller/EM_Yatlas) - Minimap data based map, has many markers for graveyards, dungeons, and other points of interest

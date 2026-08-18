@@ -85,7 +85,7 @@
 * [SoloRaidTargetIcons (Requires SuperWoW)](https://github.com/refaim/SoloRaidTargetIcons)
 * [SP SwingTimer (SuperWoW support)](https://github.com/MarcelineVQ/SP_SwingTimer)
 * [SuperCleveRoidMacros](https://github.com/jrc13245/SuperCleveRoidMacros) - Enhanced macro addon for World of Warcraft 1.12.1 (Vanilla/Turtle WoW) with dynamic tooltips, conditional execution, and extended syntax.
-* [Talentsaver](https://github.com/pepopo978/Talentsaver) [1](https://github.com/MOUZU/Talentsaver)
+* [TubTalents](https://github.com/tubtubs/TubTalents) - Save and restore talents, setup levelling plans and more
 * [VanillaGraphicBoost](https://github.com/SNiTEBoBy/VanillaGraphicBoost) - Sets higher settings for graphics on login
 * [VanillaStoryline](https://github.com/tubtubs/VanillaStoryline) - An enhanced version of the original vanilla wow gossip/quest dialog
 * [WoWInit](https://github.com/tubtubs/WoWInit) - Runs a macro on login/reload
@@ -205,6 +205,7 @@
 
 ### Talent Saving
 * [Talentsaver](https://github.com/pepopo978/Talentsaver) [1](https://github.com/MOUZU/Talentsaver)
+* [TubTalents](https://github.com/tubtubs/TubTalents) - Save and restore talents, setup levelling plans and more
 
 ### Vendor
 * [AutoProfit](https://github.com/Road-block/AutoProfit) - Sell trash to a vendor

@@ -69,6 +69,7 @@
 * [NewLevelFrame](https://github.com/alchem1ster/Vanilla-NewLevelFrame)
 * [NoToggle](https://github.com/shirsig/notoggle) - Disables the toggling of auto attack
 * [NosCursor](https://github.com/Beardedrasta/NosCursor) - Allows Customizing cursor
+* [PageTurner](https://github.com/ZythDr/PageTurner) - Scroll through vendor pages
 * [Panda](https://github.com/tubtubs/panda) - A simple vanilla wow addon that makes quick work of disenchanting, featuring rich blacklist options and neat animations
 * [PFui](https://github.com/shagu/pfUI)
 * [pfQuest](https://github.com/shagu/pfQuest) - also has great DB for gathering/chests/rares
@@ -564,7 +565,7 @@
 * [LookAtMouse](https://github.com/mitjafelicijan/LootAtMouse) - Opens loot window at mouse
 * [MuteCities](https://github.com/KameleonUK/MuteCities) - Turns off music in SW/Org
 * [NameChangeScript](https://github.com/zirtox1992/NameChangeScript)
-* [PageTurner](https://github.com/ZythDr/PageTurner) - Adds hotkey for turning pages at vendors
+* [PageTurner](https://github.com/ZythDr/PageTurner) - Scroll through vendor pages
 * [QuickBind](https://github.com/DennisWG/QuickBind) - Adds hoverbind
 * [RezzTimer](https://github.com/EinBaum/RezzTimer) - Shares res timers with party and raid members
 * [ScreenResolutionDropdownFix](https://github.com/jhinzuo/another.ScreenResolutionDropdownFix) - Prevent errors in Video Options. /FrameXML\OptionsFrame.lua fix 

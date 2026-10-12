@@ -122,45 +122,128 @@ Make sure you check the [2-E. Data Execution Prevention](https://github.com/tubt
 I've linked to the original repos for these client mods where possible. Some of these mods now link to alternate mirrors.
 If any of the links to these client mods don't work be sure to check my [Vanilla WoW Client Mod Archive](https://github.com/tubtubs/VanillaWoWClientModBackup) for a mirror.
 
-### 3-A. [NamPower](https://github.com/brues-code/nampower)
+* Note: I've recently overhauled this section. There are many mods listed here, I've sorted them into: 
+    - Basics: Many client mods will benifit, or require these
+    - Essential: Most will benefit from these
+    - Niche Fixes: You might not need these, some hardware configs might need it though
+    - Graphics: Shaders, Morphing, TMOG, HD Pack Requirements
+    - Misc Features: Lua extensions usually, an addon may require one of these, or may peak your interest as an addon developer.
+
+### 3.1 Client Mods Overview:
+Client mods follow this basic structure, for the most part. There will usually be a DLL, and maybe an accompanying addon. 
+* *Most* DLLs will be loaded with VanillaFixes[TODO: LINK], added as an entry into the `dlls.txt` file (DVXK does not belong in `dlls.txt`).
+* Some client mods come with an addon, more info on installing addons later in the [4. ADDONS](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#4-addons-1) section below.
+
+### 3.2 Basic Client Mods:
+#### 3.2A [VanillaTweaks](https://github.com/tubtubs/vanilla-tweaks/releases/)
+VanillaTweaks has some features in common with SuperWow, but my fork doesn't touch these by default. This makes changes directly to the wow.exe, adding support for Farclip, frill distance, camera max distance, name player range, large address aware, camera skip glitch and some other stuff.
+Simply extract the folder into your wow directory, and click and drag the WoW.exe ontop of VanillaTweaks.exe. This will create a new file `WoW_tweaked.exe` in the WoW folder.
+
+#### 3.2B [VanillaFixes](https://github.com/hannesmann/vanillafixes/releases)
+This is the launcher that will load the dlls on run time. Extract the zip into your WoW folder.
+In the wow folder you should now have a `dlls.txt`, open it and add the DLLs you want supported to it. Some are already listed at the top, like Nampower and SuperWoW. Here's an example of what I might end up adding to my `dlls.txt`. If you launch and one of your addons complains about a missing client mod try removing the dll from the list, and putting it at the top or otherwise changing the order. I haven't narrowed it down, but some client mods may wipe other client mods changes to the lua api for example.
+```
+# should be more DLLs listed above
+# Add your own DLLs below
+ClassicAPI.dll
+Interact.dll
+UnitXP_SP3.dll
+VanillaHelpers.dll
+perf_boost.dll
+SaureksCloset.dll
+worldmarkers.dll
+customassets.dll
+comfyatmos.dll
+```
+*NOTE: Technically the shortcut isn't necessary for Ashen WoW, but maybe for other servers*
+*On Ashen you can rename your `wow.exe` to `wow.exe.old` then rename `wow_tweaked.exe` to `wow.exe`, then going forward use the launcher/loader `vanillafixes.exe` to start wow*
+Next, make a shortcut to VanillaFixes.exe. 
+First, right click on VanillaFixes.exe and click `Create Shortcut`. Right click on the new shortcut, and click properties. Add `WoW_Tweaked.exe` after the quotes to the `Target` field. Click Apply, and Okay. Example: [(screenshot)](https://imgur.com/a/vanillafixes-shortcut-auWrnQq)
+If there's a cool Ashen Icon, you can download that. Click `Change Icon` in the properties window, then click browse  and navigate to the icon. Click Apply, then Okay. Feel free to click and drag the shortcut to your task bar, desktop, or whatever.
+
+### 3.3 Essential Client Mods: 
+#### 3.3A [NamPower](https://github.com/brues-code/nampower)
 This mod is highly configurable, easing woes for casters with latency adding support for spell batching. Just extract the DLL into the same folder as your wow.exe
 Also has an [addon](https://github.com/brues-code/NampowerSettings) to configure this mod in game with a menu opened from the minimap button. The addon allows visual indication of spell batching, with a movable icon (disabled by default). This can be installed manually (extract to `Interface/Addons` and rename the folder to `NampowerSettings`), or automatically using the git addon manager. More information in[4. ADDONS](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#4-addons-1) section below.
 
-### 3-B. [SuperWoW](https://github.com/balakethelock/SuperWoW/releases)
+#### 3.3B [SuperWoW](https://github.com/balakethelock/SuperWoW/releases)
 This mod does a lot. It adds sparkles on herbs/mines/chests. With the [addon](https://github.com/balakethelock/SuperAPI), it has a built in settings menu in the minimap button to change autoloot, FOV, noise in background, click through corpses and more. It also provides extra functionality to [supported addons](https://turtle-wow.fandom.com/wiki/Addons#SuperWoW_Addons).
 Download, extract, and drop the DLL into the WoW folder. SuperWoW's launcher isn't needed, and won't be used.
 The MPQ patch is optional, but should be renamed `patch-S.MPQ` and moved to the `Data` folder in your wow directory if you're using it.
 The [SuperAPI](https://github.com/balakethelock/SuperAPI) addon can be installed manually (extract to `Interface/Addons` and rename the folder to `SuperAPI`), or automatically using the git addon manager. More information in [4. ADDONS](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#4-addons-1) section below.
 
-### 3-C. [VanillaTweaks](https://github.com/tubtubs/vanilla-tweaks/releases/)
-VanillaTweaks has some features in common with SuperWow, but my fork doesn't touch these by default. This makes changes directly to the wow.exe, adding support for Farclip, frill distance, camera max distance, name player range, large address aware, camera skip glitch and some other stuff.
-Simply extract the folder into your wow directory, and click and drag the WoW.exe ontop of VanillaTweaks.exe. This will create a new file `WoW_tweaked.exe` in the WoW folder.
-
-### 3-D. [UnitXP_SP3](https://codeberg.org/konaka/UnitXP_SP3/releases)
+#### ~~3.3C [UnitXP_SP3](https://codeberg.org/konaka/UnitXP_SP3/releases)~~ Obsoleted by wow_turbo
 This client mod is very fresh, I don't have as much experience with it. It offers some improvements to name plate clipping, combat text rendering, and offers a means to disable weather effects as well as some other features. It adds some new keybinds, and lua calls that can line of sight check, distance check, behind check, and some tab targetting replacements that loop properly. Read more about all the functionality [here](https://codeberg.org/konaka/UnitXP_SP3/wiki)
 Extract the DLL into the Wallcraft folder. You will also need to install the accompanying addon so that it can be configured in game from the minimap button. Extract the `UnitXP_SP3_Addon` folder to the `Interface/Addons` folder.
 
-### 3-E. [VanillaHelpers](https://github.com/isfir/VanillaHelpers)
-Also very fresh. Makes some improvements to loading assets (useful for HD patches), screenshots saved as jpegs, allocating memory and adds lua functions for morphing/swapping display IDs and more. Check the [usage](https://github.com/isfir/VanillaHelpers?tab=readme-ov-file#usage) details for the lua here. Some addons take advantage of this mod's extended lua calls. For example, [MorphHelper](https://github.com/tubtubs/MorphHelper) adds a window and some slash commands for morphing.
-Download the `VanillaHelpers.dll` and place it in the WoW folder. This will need to be loaded by VanillaFixes, which is covered next.
-
-### 3-F. [PerfBoost (Mirror)](https://github.com/tubtubs/VanillaWoWClientModBackup/tree/main/ClientMods/perf_boost) [Original Repo (dead)](https://gitea.com/avitasia/perf_boost)
-This mod has many options and keybind toggles for when and what to hide/cull from rendering (players, units, corpses, spell effects). Just extract the DLL into the same folder as your wow.exe.
-Also has an [addon](https://github.com/tubtubs/VanillaWoWClientModBackup/raw/refs/heads/main/ClientMods/perf_boost/perf_boost%20addon.zip) to configure this mod in game with a menu opened from the minimap button. This  can be installed manually (extract to `Interface/Addons` and rename the folder to `PerfBoostSettings`), or automatically using the git addon manager. More information in [4. ADDONS](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#4-addons-1) section below.
-
-### 3-G. [Interact](https://github.com/luskanek/Interact)
-Allows you to bind a key which you can then use to interact with the world around you. Can pick herbs, mine, or loot, skin, and talk to NPCs without using the mouse to target. Will be particularly helpful for people playing on steam decks, or gamepads.
+#### 3.3D [Interact](https://github.com/luskanek/Interact)
+Allows you to bind a key which you can then use to interact with the world around you. Can pick herbs, mine, or loot, skin, and talk to NPCs without using the mouse to target. Will be particularly helpful for people playing on steam decks, or gamepads/controllers.
 Extract the entire zip to the same folder as your `wow.exe`, including the interface folder. You should enable this addon in game, and add the dll to the `dlls.txt`, which is coming up.
 
-### 3-H [WeirdUtils](https://codeberg.org/MarcelineVQ/WeirdUtils)
+### 3.4 Niche Fixes TODO: Mention in Troubleshooting section
+#### 3.4A [DXVK](https://github.com/doitsujin/dxvk/releases) 
+DVXK is most useful for linux, and AMD graphics users. It can improve graphical performance by converting DirectX 9 calls to Vulkan. 
+There's a release of [VanillaFixes](https://github.com/hannesmann/vanillafixes/releases) that includes DVXK, or a more update to date version can be downloaded from the [github repository](https://github.com/doitsujin/dxvk/releases).
+Simply extract, and copy the 32bit d3d9.dll and dxgi.dll to your WoW folder.
+
+#### 3.4B [Vanilla MultiMonitor Fix](https://github.com/Mates1500/VanillaMultiMonitorFix/releases)
+Fixes some issues that come with having multiple monitors of various resolutions.
+To install, extract the zip. You'll need to set `VMMFix_preferred_monitor.txt's` contents to your desired WoW monitor's index, as shown by running `ShowAllDisplayDevices.exe`. 
+It's automatically setup to be loaded by VanillaFixes in the `dlls.txt`, so you should immediately be good to go after modifying that txt.
+
+### 3.5 Graphical Client Mods
+
+#### 3.5A [VanillaHelpers](https://github.com/isfir/VanillaHelpers)
+Most notably useful/required for HD patches as it enhances memory/texture loading.
+* Screenshots saved as jpegs 
+* Lua functions for morphing/swapping display IDs and more. Check the [usage](https://github.com/isfir/VanillaHelpers?tab=readme-ov-file#usage) details for the lua here. Some addons take advantage of this mod's extended lua calls. For example, [MorphHelper](https://github.com/tubtubs/MorphHelper) adds a window and some slash commands for morphing.
+* TODO: Minimap Tracking? Or is the weirdutils one better?
+Download the `VanillaHelpers.dll` and place it in the WoW folder. This will need to be loaded by VanillaFixes, which is covered next.
+
+#### 3.5B [SaureksCloset](https://github.com/mu-arch/SaureksCloset)
+Local transmog, character race change/customization. Customizable sheathes, visible bags, player physics, hair with hats and more to come.
+📝NOTE: Requires VanillaHelpers.
+
+#### 3.5C [ComfyAtmoshere](https://github.com/aloofbit/comfyatmosphere)
+Offers many configurable improvements to lighting, fog, shadows, sun rays, water, and more. Comes with an addon to configure it in game. Actively in development, performance may vary.
+📝NOTE: Requires DVXK. 
+
+#### 3.5D [Turtle ENB](https://www.nexusmods.com/worldofwarcraft/mods/887)
+Shader config using ENBSeries.
+📝NOTE:*Replaces* DVXK
+
+### 3.6 Misc Features Client Mods
+#### 3.6A [ClassicAPI](https://github.com/brues-code/ClassicAPI)
+Would recommend if you have any addons in mind that require it. There's a pfUI fork going around on octowow that uses it for example.
+Back ported lua functions from retail mostly. Very fresh though, updated very often.
+Some features may be useful here, lots of untouched functionality if you're an addon dev it may be inspiring.
+* Mention the twitch emotes addon too
+
+#### 3.6B [GudaIO](https://github.com/vatichild/GudaIO)
+Might be turtle wow exclusive, needs testing. Allows sharing info between accounts, and some other UI tweaks.
+Has some companion addons to take advantage of it
+* [GudaPlates](https://github.com/vatichild/)
+* [Guda](https://github.com/vatichild/Guda)
+
+#### 3.6C [Reliquary](https://github.com/The-Kludge-Bureau/Reliquary)
+Would recommend if you have any addons in mind that require it.
+DBC lookup LUA libraries, seems to work fine in 1.12.1. Doesn't support all DBC though, a replacement may be around the corner.
+Spell DBCs, and Item, Map info and other DBC info may be retrievable from other mods like Nampower or ClassicAPI though.
+
+#### 3.6D [HearthDB](https://github.com/The-Kludge-Bureau/HearthDB)
+SQLite database lookups from lua, untested. Could be useful for managing larger data sets outside of the lua environment.
+No known addons use this mod though.
+
+#### 3.7B [WeirdUtils](https://codeberg.org/MarcelineVQ/WeirdUtils)
 There are lots of dlls to pick from, any that you decide to use must be added to `dlls.txt` in the next step. `weirdutils.dll/weirdutils_noperf.dll` includes all of them, but there are some that should be skipped so I recommend picking and choosing individual dlls.
 Recommended:
 * ~~`healtextfix.dll` - Fixes the bug in SuperWoW that shows hex values in healing floating combat text~~ SuperWoW updates should address this now
-* ~~`minimapicons.dll` - Adds TBC/Wotlk style minimap tracking for NPCs. Gathering and hunter tracking supported. Adds an addon into the list, can be enabled/disabled.~~ VanillaHelpers external addon seems to work better imo
-* `pngscreenshots.dll` - Saves screenshots as PNG without frame drop. Controlled via `screenshotQuality` CVAR. Probably covered by another client mod though.
+* ~~`minimapicons.dll` - Adds TBC/Wotlk style minimap tracking for NPCs. Gathering and hunter tracking supported. Adds an addon into the list, can be enabled/disabled.~~ 
+    - VanillaHelpers external addon seems to work better imo
+* `pngscreenshots.dll` - Saves screenshots as PNG without frame drop. Controlled via `screenshotQuality` CVAR. Possibly higher quality than vanillaHelpers jpeg screenshots
     * `/script SetCVar("screenshotQuality", "6")` -- set compression level (1 = fast, 9 = smallest, default 6)
     * `/script SetCVar("screenshotQuality", "0")` -- disable PNG, use original TGA format
-* `weirdperformance.dll` - Includes many interface, and math based performance boosts
+* `weirdperformance.dll` - Includes many interface, and math based performance boosts 
 * `worldmarkers.dll` - Adds lua functions for placing cataclysm style world raid markers. 
     * Commands are: `/worldmarker 1` or `/wm 1`, `/wm 5 target` where target can be other unittokens like player/mouseover. `/clearworldmarker` to remove all, or `/cwm 1` to remove a specific one.
 
@@ -171,60 +254,18 @@ Optional:
 * `logsessions.dll` - Could be useful for parsers. See readme for more info
 
 Skip: 
-- `transmogfix.dll` - not useful here
+- `transmogfix.dll` - not useful outside of TurtleWoW
 - `weirdutils.dll/weirdutils_noperf.dll` - I suggest picking and choosing others, these include all/most of the other's features
 
-### 3-I. [ClassicAPI](https://github.com/brues-code/ClassicAPI)
-Would recommend if you have any addons in mind that require it. There's a pfUI fork going around on octowow that uses it for example.
-Back ported lua functions from retail mostly. Very fresh though, updated very often.
-Some features may be useful here, lots of untouched functionality if you're an addon dev it may be inspiring.
+### 3.7 Optimization Client Mods
 
-### 3-J. [GudaIO](https://github.com/vatichild/GudaIO)
-Might be turtle wow exclusive, needs testing. Allows sharing info between accounts, and some other UI tweaks.
-Has some companion addons to take advantage of it
-* [GudaPlates](https://github.com/vatichild/)
-* [Guda](https://github.com/vatichild/Guda)
+#### 3.7A [PerfBoost (Mirror)](https://github.com/tubtubs/VanillaWoWClientModBackup/tree/main/ClientMods/perf_boost) [Original Repo (dead)](https://gitea.com/avitasia/perf_boost)
+This mod has many options and keybind toggles for when and what to hide/cull from rendering (players, units, corpses, spell effects). Just extract the DLL into the same folder as your wow.exe.
+Also has an [addon](https://github.com/tubtubs/VanillaWoWClientModBackup/raw/refs/heads/main/ClientMods/perf_boost/perf_boost%20addon.zip) to configure this mod in game with a menu opened from the minimap button. This  can be installed manually (extract to `Interface/Addons` and rename the folder to `PerfBoostSettings`), or automatically using the git addon manager. More information in [4. ADDONS](https://github.com/tubtubs/WoWClientSetupGuides/blob/main/Ashen%20Client%20Guide.md#4-addons-1) section below.
 
-### 3-K. [Reliquary](https://github.com/The-Kludge-Bureau/Reliquary)
-Would recommend if you have any addons in mind that require it.
-DBC lookup LUA libraries, seems to work fine in 1.12.1. Doesn't support all DBC though, a replacement may be around the corner.
-Spell DBCs, and Item, Map info and other DBC info may be retrievable from other mods like Nampower or ClassicAPI though.
+#### 3.7B [WoWTurbo?](https://github.com/athei/wow-mods)
+Very ambitious client mod, however it isn't easy to recommend right now. It offers a wide variety of performance bonuses, obsoleting UnitXP_SP3 and weirdutil's performance mods. It aims to provide support for Nampower/SuperWoW which seems good, however I noticed it causes some issues with ClassicAPI. In particular, the image insertion in text strings (ex: gold, silver, copper icons in newer pfUI builds) don't seem to work.
 
-### 3-L. [HearthDB](https://github.com/The-Kludge-Bureau/HearthDB)
-SQLite database lookups from lua, untested. Could be useful for managing larger data sets outside of the lua environment.
-No known addons use this mod though.
-
-### 3-M. [VanillaFixes](https://github.com/hannesmann/vanillafixes/releases)
-This is the launcher that will load the dlls on run time. Extract the zip into your WoW folder.
-In the wow folder you should now have a `dlls.txt`, open it and add the DLLs you want supported to it. Some are already listed at the top, like Nampower and SuperWoW. Here's an example of what I might end up adding to my `dlls.txt`. If you launch and one of your addons complains about a missing client mod try removing the dll from the list, and putting it at the top or otherwise changing the order. I haven't narrowed it down, but some client mods may wipe other client mods changes to the lua api for example.
-```
-# should be more DLLs listed above
-# Add your own DLLs below
-ClassicAPI.dll
-Interact.dll
-VanillaHelpers.dll
-perf_boost.dll
-Reliquary.dll
-UnitXP_SP3.dll
-weirdperformance.dll
-worldmarkers.dll
-customassets.dll
-```
-*NOTE: Technically the shortcut isn't necessary for Ashen WoW, but maybe for other servers*
-*On Ashen you can rename your `wow.exe` to `wow.exe.old` then rename `wow_tweaked.exe` to `wow.exe`, then going forward use the launcher/loader `vanillafixes.exe` to start wow*
-Next, make a shortcut to VanillaFixes.exe. 
-First, right click on VanillaFixes.exe and click `Create Shortcut`. Right click on the new shortcut, and click properties. Add `WoW_Tweaked.exe` after the quotes to the `Target` field. Click Apply, and Okay. Example: [(screenshot)](https://imgur.com/a/vanillafixes-shortcut-auWrnQq)
-If there's a cool Ashen Icon, you can download that. Click `Change Icon` in the properties window, then click browse  and navigate to the icon. Click Apply, then Okay. Feel free to click and drag the shortcut to your task bar, desktop, or whatever.
-
-### 3-N. [DXVK](https://github.com/doitsujin/dxvk/releases) (optional / only if you need it)
-DVXK is most useful for linux, and AMD graphics users. It can improve graphical performance by converting DirectX 9 calls to Vulkan. 
-There's a release of [VanillaFixes](https://github.com/hannesmann/vanillafixes/releases) that includes DVXK, or a more update to date version can be downloaded from the [github repository](https://github.com/doitsujin/dxvk/releases).
-Simply extract, and copy the 32bit d3d9.dll and dxgi.dll to your WoW folder.
-
-### 3-O. [Vanilla MultiMonitor Fix](https://github.com/Mates1500/VanillaMultiMonitorFix/releases) (optional / only if you need it)
-I haven't used this myself, but it fixes some issues that come with having multiple monitors of various resolutions. I have multiple monitors of the same resolution/frequency and never ran into issues.
-To install, extract the zip. You'll need to set `VMMFix_preferred_monitor.txt's` contents to your desired WoW monitor's index, as shown by running `ShowAllDisplayDevices.exe`. 
-It's automatically setup to be loaded by VanillaFixes, so you should immediately be good to go after modifying that txt.
 
 ## 4. ADDONS
 ### 4-A. Manual Installation
